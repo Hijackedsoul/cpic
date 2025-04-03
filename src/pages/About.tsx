@@ -39,7 +39,7 @@ const About = () => {
                   The Competitive Programming Introductory Course (CPIC) is an intensive training program designed to transform beginners into skilled algorithmic problem solvers.
                 </p>
                 <p>
-                  Founded in 2018 by a team of competitive programming champions, CPIC has helped hundreds of students master advanced algorithms, data structures, and problem-solving techniques used in competitions like IOI, ICPC, and tech company interviews.
+                  Founded in 2024 by a team of competitive programming champions, CPIC has helped hundreds of students master advanced algorithms, data structures, and problem-solving techniques used in competitions like IOI, ICPC, and tech company interviews.
                 </p>
                 <p>
                   Our curriculum is carefully structured to build a solid foundation, with a focus on hands-on practice and real competition scenarios.
