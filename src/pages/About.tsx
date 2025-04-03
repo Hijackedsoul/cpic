@@ -77,70 +77,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Course Structure Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-6 text-center">
-            Course <span className="text-neon-cyan">Structure</span>
-          </h2>
-          <p className="text-white/70 text-center mb-12 max-w-2xl mx-auto">
-            Our intensive program is designed to rapidly accelerate your competitive programming skills.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#111] p-6 rounded-lg border border-white/10 hover:border-neon-cyan/50 transition-all">
-              <div className="w-12 h-12 bg-neon-cyan/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-neon-cyan font-bold text-xl">1</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">1-Week Intensive Programme</h3>
-              <p className="text-white/70">
-                A focused, immersive experience that rapidly builds your competitive programming skills in just one week.
-              </p>
-            </div>
-            
-            <div className="bg-[#111] p-6 rounded-lg border border-white/10 hover:border-neon-magenta/50 transition-all">
-              <div className="w-12 h-12 bg-neon-magenta/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-neon-magenta font-bold text-xl">2</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Live Contests Each Day</h3>
-              <p className="text-white/70">
-                Put your skills to the test with daily live contests, allowing you to apply what you've learned in real competition scenarios.
-              </p>
-            </div>
-            
-            <div className="bg-[#111] p-6 rounded-lg border border-white/10 hover:border-neon-cyan/50 transition-all">
-              <div className="w-12 h-12 bg-neon-cyan/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-neon-cyan font-bold text-xl">3</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Super Beginner-Friendly Theory Lectures</h3>
-              <p className="text-white/70">
-                Comprehensive theory lectures that break down complex concepts into easy-to-understand modules, perfect for beginners.
-              </p>
-            </div>
-            
-            <div className="bg-[#111] p-6 rounded-lg border border-white/10 hover:border-neon-magenta/50 transition-all">
-              <div className="w-12 h-12 bg-neon-magenta/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-neon-magenta font-bold text-xl">4</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Win Prizes in Our Final Contest!</h3>
-              <p className="text-white/70">
-                Showcase your newly acquired skills in our culminating competition with the chance to win exciting prizes and recognition.
-              </p>
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Link to="/register">
-              <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black font-mono">
-                Register Now
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Trainers Section */}
-      <section className="py-20 bg-[#0C0C0C]">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-6 text-center">
             Meet Our <span className="text-neon-magenta">Trainers</span>
@@ -187,7 +125,7 @@ const About = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-[#0C0C0C]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-6 text-center">
             Student <span className="text-neon-cyan">Testimonials</span>
