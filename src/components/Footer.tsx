@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Mail, Discord } from 'lucide-react';
+import { MessageSquare, Twitter, Mail, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
             <h3 className="text-white font-mono text-lg mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">
-                <Discord size={20} />
+                <MessageSquare size={20} />
                 <span className="sr-only">Discord</span>
               </a>
               <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">

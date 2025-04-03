@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
-import { Discord, Twitter, Github, Mail } from 'lucide-react';
+import { MessageSquare, Twitter, Github, Mail } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -130,7 +130,7 @@ const Contact = () => {
                   <h3 className="text-xl font-mono font-bold text-neon-cyan mb-4">Our Socials</h3>
                   <div className="space-y-4">
                     <SocialLink 
-                      icon={<Discord className="h-5 w-5" />}
+                      icon={<MessageSquare className="h-5 w-5" />}
                       platform="Discord"
                       handle="Join our server"
                       url="#"
