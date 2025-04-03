@@ -89,25 +89,36 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TrainerCard 
-              name="Alex Chen"
+              name="Ryan Shaw"
               image="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
-              role="Lead Instructor & IOI Gold Medalist"
-              medals={{ IOI: true, NOI: true }}
-              bio="With 5 years of competitive programming experience, Alex has trained numerous students who have gone on to win medals at IOI."
-            />
-            <TrainerCard 
-              name="Maya Rodriguez"
-              image="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
-              role="Algorithm Specialist & ICPC Finalist"
-              medals={{ ICPC: true }}
-              bio="Maya specializes in graph algorithms and dynamic programming. She has been a coach for the regional ICPC team for 3 years."
-            />
-            <TrainerCard 
-              name="David Kim"
-              image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-              role="Data Structures Expert & NOI Silver Medalist"
+              role="Lead Trainer"
               medals={{ NOI: true }}
-              bio="David focuses on advanced data structures and their applications in competitive programming problems."
+              achievements={[
+                "NOI Gold Medalist",
+                "Top 5 Finish at NOI 2025"
+              ]}
+              bio="As our lead trainer, Ryan brings exceptional algorithmic expertise and a passion for teaching competitive programming fundamentals."
+            />
+            <TrainerCard 
+              name="Lim Chang Jun"
+              image="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+              role="Algorithm Specialist"
+              medals={{ IOI: true }}
+              achievements={[
+                "IOI Bronze Medalist"
+              ]}
+              bio="Chang Jun specializes in advanced algorithmic strategies and optimization techniques for competitive programming contests."
+            />
+            <TrainerCard 
+              name="Ray"
+              image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+              role="Data Structures Expert"
+              medals={{ NOI: true }}
+              achievements={[
+                "NOI Silver Medalist",
+                "Data Structures Specialist"
+              ]}
+              bio="Ray focuses on teaching efficient data structures and their applications in solving complex algorithmic problems."
             />
           </div>
         </div>

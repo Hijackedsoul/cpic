@@ -1,5 +1,6 @@
 
 import { Medal } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface TrainerCardProps {
   name: string;
@@ -10,10 +11,14 @@ interface TrainerCardProps {
     IOI?: boolean;
     ICPC?: boolean;
   };
+  achievements?: string[];
   bio: string;
 }
 
-const TrainerCard = ({ name, image, role, medals, bio }: TrainerCardProps) => {
+const TrainerCard = ({ name, image, role, medals, achievements = [], bio }: TrainerCardProps) => {
+  // Generate initials for avatar fallback
+  const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
+  
   return (
     <div className="rounded-lg bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-colors duration-300 group">
       <div className="aspect-square relative overflow-hidden">
@@ -43,9 +48,26 @@ const TrainerCard = ({ name, image, role, medals, bio }: TrainerCardProps) => {
         )}
       </div>
       <div className="p-4 space-y-2">
-        <h3 className="font-mono text-lg font-bold text-white group-hover:text-neon-cyan transition-colors">{name}</h3>
+        <div className="flex items-center gap-2">
+          <Avatar className="h-8 w-8 border border-neon-cyan/30">
+            <AvatarImage src={image} alt={name} />
+            <AvatarFallback className="bg-black text-neon-cyan text-xs">{initials}</AvatarFallback>
+          </Avatar>
+          <h3 className="font-mono text-lg font-bold text-white group-hover:text-neon-cyan transition-colors">{name}</h3>
+        </div>
         <p className="text-neon-magenta font-medium text-sm">{role}</p>
-        <p className="text-gray-400 text-sm">{bio}</p>
+        
+        {achievements.length > 0 && (
+          <ul className="text-xs text-neon-green space-y-1 pt-1">
+            {achievements.map((achievement, index) => (
+              <li key={index} className="flex items-center gap-1">
+                <span className="text-neon-cyan">›</span> {achievement}
+              </li>
+            ))}
+          </ul>
+        )}
+        
+        <p className="text-gray-400 text-sm pt-1">{bio}</p>
       </div>
     </div>
   );
