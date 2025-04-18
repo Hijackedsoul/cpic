@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Users, Database, Brain } from 'lucide-react';
+import { ArrowRight, Code, Users, Database, Brain, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import TypewriterText from '@/components/TypewriterText';
@@ -84,14 +84,14 @@ const Index = () => {
               description="Our trainers are NOI/IOI winners with years of experience."
             />
             <FeatureCard 
-              icon={<Database className="h-8 w-8 text-neon-cyan" />}
-              title="Problem Database"
-              description="Access to 500+ curated problems with detailed solutions."
-            />
-            <FeatureCard 
-              icon={<Brain className="h-8 w-8 text-neon-magenta" />}
+              icon={<Brain className="h-8 w-8 text-neon-cyan" />}
               title="Practical Approach"
               description="Focus on hands-on coding and problem-solving strategies."
+            />
+            <FeatureCard 
+              icon={<Gift className="h-8 w-8 text-neon-magenta" />}
+              title="Completely Free"
+              description="No cost to join! Free food, merch, and no experience required."
             />
           </div>
         </div>
