@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Users, Database, Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,9 +6,8 @@ import TypewriterText from '@/components/TypewriterText';
 import CountdownTimer from '@/components/CountdownTimer';
 
 const Index = () => {
-  // Set the countdown date to 30 days from now
-  const countdownDate = new Date();
-  countdownDate.setDate(countdownDate.getDate() + 30);
+  // Set the countdown date to June 23, 2025
+  const countdownDate = new Date('2025-06-23T00:00:00');
 
   return (
     <Layout>
