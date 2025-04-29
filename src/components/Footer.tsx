@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Tagline */}
           <div className="space-y-4">
-            <Logo size="medium" />
+            <Logo />
             <p className="text-gray-400 text-sm max-w-xs">
               Competitive Programming Introductory Course - Master algorithms, break boundaries, and solve complex problems.
             </p>
