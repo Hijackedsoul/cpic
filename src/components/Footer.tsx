@@ -1,7 +1,6 @@
 
 import { Link } from 'react-router-dom';
 import { MessageSquare, Twitter, Mail, Github } from 'lucide-react';
-import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -10,7 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Tagline */}
           <div className="space-y-4">
-            <Logo size="medium" />
+            <Link to="/" className="text-2xl font-mono font-bold text-white">
+              <span className="text-neon-cyan">&lt;</span>CPIC<span className="text-neon-cyan">/&gt;</span>
+            </Link>
             <p className="text-gray-400 text-sm max-w-xs">
               Competitive Programming Introductory Course - Master algorithms, break boundaries, and solve complex problems.
             </p>

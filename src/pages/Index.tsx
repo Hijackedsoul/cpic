@@ -1,11 +1,9 @@
-
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Users, Brain, Gift } from 'lucide-react';
+import { ArrowRight, Code, Users, Database, Brain, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import TypewriterText from '@/components/TypewriterText';
 import CountdownTimer from '@/components/CountdownTimer';
-import Logo from '@/components/Logo';
 
 const Index = () => {
   // Set the countdown date to June 23, 2025
@@ -31,13 +29,9 @@ const Index = () => {
 
         <div className="container mx-auto px-4 py-16 z-10 text-center">
           <div className="space-y-6 max-w-3xl mx-auto">
-            <div className="mx-auto w-32 h-32 mb-8">
-              <img 
-                src="/lovable-uploads/712cfa86-4683-490d-a5c1-676bd68f6196.png" 
-                alt="CPIC Logo" 
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white">
+              <span className="text-gradient-cyan">CPIC</span>
+            </h1>
             <p className="text-xl md:text-2xl text-white/80 font-mono">
               Competitive Programming Introductory Course
             </p>
