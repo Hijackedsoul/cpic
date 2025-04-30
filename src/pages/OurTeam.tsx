@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import TrainerCard from '@/components/TrainerCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Team, Users, UsersRound, Briefcase } from 'lucide-react';
+import { Users2, Users, UsersRound, Briefcase } from 'lucide-react';
 
 const OurTeam = () => {
   const [currentTab, setCurrentTab] = useState("organisers");
@@ -96,7 +96,7 @@ const OurTeam = () => {
           <TabsList className="grid grid-cols-2 md:grid-cols-4 bg-black/50 border border-white/10 p-1 mb-8">
             <TabsTrigger value="organisers" className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black">
               <div className="flex items-center gap-2">
-                <Team size={16} />
+                <Users2 size={16} />
                 <span className="hidden md:inline">Organisers</span>
               </div>
             </TabsTrigger>
