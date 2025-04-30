@@ -4,12 +4,14 @@ import Layout from '@/components/Layout';
 import TrainerCard from '@/components/TrainerCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Users2, Users, UsersRound, Briefcase } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast";
 
 const OurTeam = () => {
+  const { toast } = useToast();
   const [currentTab, setCurrentTab] = useState("organisers");
 
   // Placeholder data for each team category
-  const teamData = {
+  const [teamData, setTeamData] = useState({
     organisers: [
       {
         name: "Alex Chen",
@@ -80,6 +82,22 @@ const OurTeam = () => {
         bio: "Lily specializes in advanced data structures and their applications in competitive programming."
       },
     ],
+  });
+
+  const handleUpdateTeamMember = (category: string, index: number, updatedMember: any) => {
+    const updatedTeamData = { ...teamData };
+    updatedTeamData[category][index] = {
+      ...updatedTeamData[category][index],
+      ...updatedMember
+    };
+    
+    setTeamData(updatedTeamData);
+    
+    toast({
+      title: "Team member updated",
+      description: `${updatedMember.name}'s information has been updated.`,
+      duration: 3000,
+    });
   };
 
   return (
@@ -132,6 +150,7 @@ const OurTeam = () => {
                     medals={member.medals}
                     achievements={member.achievements}
                     bio={member.bio}
+                    onUpdate={(updatedMember) => handleUpdateTeamMember(category, index, updatedMember)}
                   />
                 ))}
               </div>
