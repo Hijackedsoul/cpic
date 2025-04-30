@@ -1,7 +1,6 @@
-
 import Layout from '@/components/Layout';
 import TrainerCard from '@/components/TrainerCard';
-import TestimonialCard from '@/components/TestimonialCard';
+import EditableTestimonialCard from '@/components/EditableTestimonialCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -135,22 +134,22 @@ const About = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard 
-              name="Sophia Wang"
-              role="Computer Science Student, MIT"
-              testimonial="CPIC transformed my approach to problem-solving. The trainers break down complex algorithms in a way that's easy to understand, and the practice problems really cement your understanding."
+            <EditableTestimonialCard 
+              initialName="Sophia Wang"
+              initialRole="Computer Science Student, MIT"
+              initialTestimonial="CPIC transformed my approach to problem-solving. The trainers break down complex algorithms in a way that's easy to understand, and the practice problems really cement your understanding."
               rating={5}
             />
-            <TestimonialCard 
-              name="James Peterson"
-              role="Software Engineer, Google"
-              testimonial="I credit CPIC for helping me land my dream job. The interview preparation was spot-on, and I felt confident tackling algorithmic questions during technical interviews."
+            <EditableTestimonialCard 
+              initialName="James Peterson"
+              initialRole="Software Engineer, Google"
+              initialTestimonial="I credit CPIC for helping me land my dream job. The interview preparation was spot-on, and I felt confident tackling algorithmic questions during technical interviews."
               rating={5}
             />
-            <TestimonialCard 
-              name="Raj Patel"
-              role="High School Student & NOI Participant"
-              testimonial="Before CPIC, I struggled with competitive programming contests. The structured curriculum and personalized feedback helped me improve rapidly. I'm now preparing for the International Olympiad!"
+            <EditableTestimonialCard 
+              initialName="Raj Patel"
+              initialRole="High School Student & NOI Participant"
+              initialTestimonial="Before CPIC, I struggled with competitive programming contests. The structured curriculum and personalized feedback helped me improve rapidly. I'm now preparing for the International Olympiad!"
               rating={4}
             />
           </div>
