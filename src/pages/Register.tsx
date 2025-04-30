@@ -6,7 +6,6 @@ import { z } from "zod";
 import Layout from '@/components/Layout';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "@/components/ui/use-toast";
@@ -27,9 +26,6 @@ const formSchema = z.object({
   emergency_contact: z.string().email({
     message: "Please enter a valid parent/guardian email."
   }),
-  experience: z.string({
-    required_error: "Please select your programming experience."
-  }),
   agree_terms: z.boolean().refine(val => val === true, {
     message: "You must agree to the terms and conditions."
   })
@@ -48,7 +44,6 @@ const Register = () => {
       age: "",
       school: "",
       emergency_contact: "",
-      experience: "",
       agree_terms: false
     }
   });
@@ -148,25 +143,6 @@ const Register = () => {
                         <FormDescription>
                           Emergency contact for participants under 18
                         </FormDescription>
-                        <FormMessage />
-                      </FormItem>} />
-
-                  <FormField control={form.control} name="experience" render={({
-                  field
-                }) => <FormItem>
-                        <FormLabel>Programming Experience</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                          <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select your experience level" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="beginner">Beginner (0-1 years)</SelectItem>
-                            <SelectItem value="intermediate">Intermediate (1-3 years)</SelectItem>
-                            <SelectItem value="advanced">Advanced (3+ years)</SelectItem>
-                          </SelectContent>
-                        </Select>
                         <FormMessage />
                       </FormItem>} />
 
