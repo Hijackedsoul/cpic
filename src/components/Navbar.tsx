@@ -64,6 +64,8 @@ const NavLinks = () => (
   <>
     <Link to="/" className="font-mono text-white hover:text-neon-cyan transition-colors">Home</Link>
     <Link to="/about" className="font-mono text-white hover:text-neon-cyan transition-colors">About</Link>
+    <Link to="/our-team" className="font-mono text-white hover:text-neon-cyan transition-colors">Our Team</Link>
+    <Link to="/our-partners" className="font-mono text-white hover:text-neon-cyan transition-colors">Our Partners</Link>
     <Link to="/archives" className="font-mono text-white hover:text-neon-cyan transition-colors">Archives</Link>
     <Link to="/contact" className="font-mono text-white hover:text-neon-cyan transition-colors">Contact</Link>
   </>
@@ -84,6 +86,20 @@ const NavLinksMobile = ({ setIsOpen }: { setIsOpen: (value: boolean) => void }) 
       onClick={() => setIsOpen(false)}
     >
       About
+    </Link>
+    <Link 
+      to="/our-team" 
+      className="font-mono text-white hover:text-neon-cyan transition-colors py-2"
+      onClick={() => setIsOpen(false)}
+    >
+      Our Team
+    </Link>
+    <Link 
+      to="/our-partners" 
+      className="font-mono text-white hover:text-neon-cyan transition-colors py-2"
+      onClick={() => setIsOpen(false)}
+    >
+      Our Partners
     </Link>
     <Link 
       to="/archives" 
