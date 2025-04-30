@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -7,9 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "@/components/ui/use-toast";
+
 const formSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters."
@@ -20,34 +21,38 @@ const formSchema = z.object({
   age: z.string().refine(val => !isNaN(parseInt(val)) && parseInt(val) > 0, {
     message: "Please enter a valid age."
   }),
+  school: z.string().min(2, {
+    message: "Please enter your school name."
+  }),
+  emergency_contact: z.string().email({
+    message: "Please enter a valid parent/guardian email."
+  }),
   experience: z.string({
     required_error: "Please select your programming experience."
-  }),
-  programming_languages: z.array(z.string()).refine(value => value.length > 0, {
-    message: "You must select at least one programming language."
-  }),
-  why_join: z.string().min(10, {
-    message: "Please tell us a bit more about why you want to join."
   }),
   agree_terms: z.boolean().refine(val => val === true, {
     message: "You must agree to the terms and conditions."
   })
 });
+
 type FormValues = z.infer<typeof formSchema>;
+
 const Register = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
       age: "",
+      school: "",
+      emergency_contact: "",
       experience: "",
-      programming_languages: [],
-      why_join: "",
       agree_terms: false
     }
   });
+
   const onSubmit = (data: FormValues) => {
     setIsSubmitting(true);
 
@@ -62,6 +67,7 @@ const Register = () => {
       form.reset();
     }, 1500);
   };
+
   return <Layout>
       {/* Header Section */}
       <section className="pt-28 pb-16 bg-black relative overflow-hidden">
@@ -122,6 +128,29 @@ const Register = () => {
                         <FormMessage />
                       </FormItem>} />
 
+                  <FormField control={form.control} name="school" render={({
+                  field
+                }) => <FormItem>
+                        <FormLabel>School</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Enter your school name" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>} />
+
+                  <FormField control={form.control} name="emergency_contact" render={({
+                  field
+                }) => <FormItem>
+                        <FormLabel>Parent/Guardian Email</FormLabel>
+                        <FormControl>
+                          <Input placeholder="parent@example.com" {...field} />
+                        </FormControl>
+                        <FormDescription>
+                          Emergency contact for participants under 18
+                        </FormDescription>
+                        <FormMessage />
+                      </FormItem>} />
+
                   <FormField control={form.control} name="experience" render={({
                   field
                 }) => <FormItem>
@@ -138,40 +167,6 @@ const Register = () => {
                             <SelectItem value="advanced">Advanced (3+ years)</SelectItem>
                           </SelectContent>
                         </Select>
-                        <FormMessage />
-                      </FormItem>} />
-
-                  <FormField control={form.control} name="programming_languages" render={() => <FormItem>
-                        <div className="mb-4">
-                          <FormLabel>Programming Languages</FormLabel>
-                          <FormDescription>
-                            Select all that you're familiar with
-                          </FormDescription>
-                        </div>
-                        {["C++", "Java", "Python", "JavaScript", "Other"].map(language => <FormField key={language} control={form.control} name="programming_languages" render={({
-                    field
-                  }) => {
-                    return <FormItem key={language} className="flex flex-row items-start space-x-3 space-y-0 py-1">
-                                  <FormControl>
-                                    <Checkbox checked={field.value?.includes(language)} onCheckedChange={checked => {
-                          return checked ? field.onChange([...field.value, language]) : field.onChange(field.value?.filter(value => value !== language));
-                        }} />
-                                  </FormControl>
-                                  <FormLabel className="font-normal cursor-pointer">
-                                    {language}
-                                  </FormLabel>
-                                </FormItem>;
-                  }} />)}
-                        <FormMessage />
-                      </FormItem>} />
-
-                  <FormField control={form.control} name="why_join" render={({
-                  field
-                }) => <FormItem>
-                        <FormLabel>Why do you want to join CPIC?</FormLabel>
-                        <FormControl>
-                          <Textarea placeholder="Tell us about your goals and what you hope to achieve..." className="resize-none min-h-[120px]" {...field} />
-                        </FormControl>
                         <FormMessage />
                       </FormItem>} />
 
