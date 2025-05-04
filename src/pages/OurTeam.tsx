@@ -1,67 +1,108 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import TrainerCard from '@/components/TrainerCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Users2, Users, UsersRound, Briefcase } from 'lucide-react';
-import { useToast } from "@/components/ui/use-toast";
+import { Users2, Users, UsersRound, Briefcase, Camera, Award } from 'lucide-react';
+import { useToast } from "@/hooks/use-toast";
 
 const OurTeam = () => {
   const { toast } = useToast();
   const [currentTab, setCurrentTab] = useState("organisers");
 
-  // Placeholder data for each team category
+  // Team data with actual members
   const [teamData, setTeamData] = useState({
     organisers: [
       {
-        name: "Alex Chen",
+        name: "Arya Ananda Putra",
         image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
-        role: "Program Director",
+        role: "Lead Organiser",
         medals: { NOI: true, IOI: true },
-        achievements: ["NOI Gold Medalist 2020", "IOI Silver Medalist 2021"],
-        bio: "Alex leads the CPIC program, bringing over 8 years of competitive programming experience."
+        achievements: ["NOI Gold Medalist", "IOI Silver Medalist"],
+        bio: "Leads the CPIC program and coordinates all organizational efforts."
       },
       {
-        name: "Sarah Wong",
+        name: "Ryan Shaw",
         image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
-        role: "Operations Lead",
+        role: "Organiser",
         medals: { ICPC: true },
         achievements: ["ICPC Regional Finalist", "Google Code Jam Finalist"],
-        bio: "Sarah manages the day-to-day operations and logistics for all CPIC events and classes."
+        bio: "Contributes to program organization while also serving as Head Trainer."
+      },
+      {
+        name: "Francis Ang Zhao Xiong",
+        image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=300&h=300&fit=crop",
+        role: "Organiser",
+        medals: { NOI: true },
+        achievements: ["NOI Silver Medalist"],
+        bio: "Manages logistics and coordinates with participating schools."
+      },
+      {
+        name: "Edward Yee Mynn Sherng",
+        image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
+        role: "Organiser",
+        medals: {},
+        achievements: ["Regional Programming Contest Winner"],
+        bio: "Oversees participant registration and competition logistics."
+      },
+      {
+        name: "Pannawit Supanwassa",
+        image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop",
+        role: "Organiser",
+        medals: { IOI: true },
+        achievements: ["IOI Bronze Medalist"],
+        bio: "Coordinates international participation and cultural exchange programs."
+      },
+      {
+        name: "Seah E-Ket",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
+        role: "Organiser",
+        medals: {},
+        achievements: ["University Programming Competition Winner"],
+        bio: "Handles sponsorship relationships and partner communications."
+      },
+      {
+        name: "Jayden Tiew",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+        role: "Organiser",
+        medals: { NOI: true },
+        achievements: ["NOI Bronze Medalist"],
+        bio: "Manages outreach initiatives and participant support services."
       },
     ],
     media: [
       {
-        name: "Marcus Lee",
-        image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=300&h=300&fit=crop",
-        role: "Media Director",
+        name: "Nguyen Chi Ken",
+        image: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=300&h=300&fit=crop",
+        role: "Head of Media",
         medals: {},
-        bio: "Marcus oversees all media content creation and social media strategies for CPIC."
-      },
-      {
-        name: "Priya Sharma",
-        image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
-        role: "Visual Designer",
-        medals: {},
-        bio: "Priya creates visually engaging content for all CPIC materials and platforms."
-      },
+        achievements: ["Lead Designer for CPIC", "Social Media Growth Expert"],
+        bio: "Ken oversees all media content creation and social media strategies for CPIC."
+      }
     ],
     mainTrainers: [
       {
-        name: "Dr. Jason Tan",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
+        name: "Ryan Shaw",
+        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
         role: "Head Trainer",
         medals: { NOI: true, IOI: true, ICPC: true },
-        achievements: ["IOI Gold Medalist", "ICPC World Finalist", "Ph.D. in Computer Science"],
-        bio: "Dr. Tan leads the advanced algorithm training sessions and supervises curriculum development."
+        achievements: ["IOI Gold Medalist", "ICPC World Finalist"],
+        bio: "Ryan leads the advanced algorithm training sessions and supervises curriculum development."
       },
       {
-        name: "Maya Patel",
-        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
+        name: "Yu Zhe Yuan",
+        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
         role: "Senior Trainer",
         medals: { NOI: true, IOI: true },
         achievements: ["IOI Silver Medalist", "Google Code Jam Finalist"],
-        bio: "Maya specializes in graph algorithms and dynamic programming training modules."
+        bio: "Specializes in graph algorithms and dynamic programming training modules."
+      },
+      {
+        name: "Tung Jia Ray",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
+        role: "Senior Trainer",
+        medals: { NOI: true },
+        achievements: ["NOI Gold Medalist", "ICPC Regional Winner"],
+        bio: "Focuses on competitive problem-solving techniques and contest strategies."
       },
     ],
     trainers: [
@@ -114,19 +155,19 @@ const OurTeam = () => {
           <TabsList className="grid grid-cols-2 md:grid-cols-4 bg-black/50 border border-white/10 p-1 mb-8">
             <TabsTrigger value="organisers" className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black">
               <div className="flex items-center gap-2">
-                <Users2 size={16} />
+                <Briefcase size={16} />
                 <span className="hidden md:inline">Organisers</span>
               </div>
             </TabsTrigger>
             <TabsTrigger value="media" className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black">
               <div className="flex items-center gap-2">
-                <Briefcase size={16} />
+                <Camera size={16} />
                 <span className="hidden md:inline">Media</span>
               </div>
             </TabsTrigger>
             <TabsTrigger value="mainTrainers" className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black">
               <div className="flex items-center gap-2">
-                <UsersRound size={16} />
+                <Award size={16} />
                 <span className="hidden md:inline">Main Trainers</span>
               </div>
             </TabsTrigger>
