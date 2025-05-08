@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -46,15 +47,6 @@ const Archives = () => {
                           <li>100+ participants from 20+ different secondary and JC schools</li>
                           <li>Final contest with cash prizes and certificates</li>
                           <li>Special guest lecture by NOI 2024 Champion</li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-lg font-semibold text-neon-cyan">Winners</h4>
-                        <ul className="list-disc list-inside space-y-1 ml-2">
-                          <li><span className="font-medium">Gold:</span> John Tan, Raffles Institution</li>
-                          <li><span className="font-medium">Silver:</span> Sarah Lim, Hwa Chong Institution</li>
-                          <li><span className="font-medium">Bronze:</span> Michael Zhang, NUS High School</li>
                         </ul>
                       </div>
                     </div>
