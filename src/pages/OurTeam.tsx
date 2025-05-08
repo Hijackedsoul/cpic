@@ -83,30 +83,30 @@ const OurTeam = () => {
       {
         name: "Yu Zhe Yuan",
         image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
-        role: "Senior Trainer",
+        role: "Trainer",
         medals: { NOI: true, IOI: true },
         bio: "Specializes in graph algorithms and dynamic programming training modules."
       },
       {
         name: "Tung Jia Ray",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
-        role: "Senior Trainer",
+        role: "Trainer",
         medals: { NOI: true },
         bio: "Focuses on competitive problem-solving techniques and contest strategies."
       },
       {
-        name: "David Lim",
-        image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=300&h=300&fit=crop",
-        role: "Algorithms Trainer",
-        medals: { NOI: true },
-        bio: "David focuses on teaching fundamental algorithms and problem-solving techniques."
+        name: "Nguyen Dinh Anh",
+        image: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=300&h=300&fit=crop",
+        role: "Trainer",
+        medals: { IOI: true },
+        bio: "Expert in algorithm optimization and programming contest preparation."
       },
       {
-        name: "Lily Zhang",
-        image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
-        role: "Data Structures Trainer",
-        medals: { ICPC: true },
-        bio: "Lily specializes in advanced data structures and their applications in competitive programming."
+        name: "Ziv Lim Zhengheng",
+        image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=300&h=300&fit=crop",
+        role: "Trainer",
+        medals: { NOI: true },
+        bio: "Specializes in data structures and algorithmic problem-solving strategies."
       },
     ],
   });
