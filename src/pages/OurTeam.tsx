@@ -17,50 +17,43 @@ const OurTeam = () => {
         name: "Arya Ananda Putra",
         image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
         role: "Lead Organiser",
-        medals: { NOI: true, IOI: true },
-        bio: "Leads the CPIC program and coordinates all organizational efforts."
+        funFact: "Can solve a Rubik's cube in under 30 seconds"
       },
       {
         name: "Ryan Shaw",
         image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: { ICPC: true },
-        bio: "Contributes to program organization while also serving as Head Trainer."
+        funFact: "Has visited over 30 countries"
       },
       {
         name: "Francis Ang Zhao Xiong",
         image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: { NOI: true },
-        bio: "Manages logistics and coordinates with participating schools."
+        funFact: "Plays three musical instruments"
       },
       {
         name: "Edward Yee Mynn Sherng",
         image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: {},
-        bio: "Oversees participant registration and competition logistics."
+        funFact: "Amateur astronomy enthusiast"
       },
       {
         name: "Pannawit Supanwassa",
         image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: { IOI: true },
-        bio: "Coordinates international participation and cultural exchange programs."
+        funFact: "Makes his own hot sauce"
       },
       {
         name: "Seah E-Ket",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: {},
-        bio: "Handles sponsorship relationships and partner communications."
+        funFact: "Loves rock climbing"
       },
       {
         name: "Jayden Tiew",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
         role: "Organiser",
-        medals: { NOI: true },
-        bio: "Manages outreach initiatives and participant support services."
+        funFact: "Can recite pi to 100 decimal places"
       },
     ],
     media: [
@@ -68,8 +61,7 @@ const OurTeam = () => {
         name: "Nguyen Chi Ken",
         image: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=300&h=300&fit=crop",
         role: "Head of Media",
-        medals: {},
-        bio: "Ken oversees all media content creation and social media strategies for CPIC."
+        funFact: "Has a collection of vintage cameras"
       }
     ],
     trainers: [
@@ -77,36 +69,31 @@ const OurTeam = () => {
         name: "Ryan Shaw",
         image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
         role: "Head Trainer",
-        medals: { NOI: true, IOI: true, ICPC: true },
-        bio: "Ryan leads the advanced algorithm training sessions and supervises curriculum development."
+        funFact: "Once debugged code for 36 hours straight"
       },
       {
         name: "Yu Zhe Yuan",
         image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
         role: "Trainer",
-        medals: { NOI: true, IOI: true },
-        bio: "Specializes in graph algorithms and dynamic programming training modules."
+        funFact: "Knows five programming languages"
       },
       {
         name: "Tung Jia Ray",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
         role: "Trainer",
-        medals: { NOI: true },
-        bio: "Focuses on competitive problem-solving techniques and contest strategies."
+        funFact: "Started coding at age 8"
       },
       {
         name: "Nguyen Dinh Anh",
         image: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=300&h=300&fit=crop",
         role: "Trainer",
-        medals: { IOI: true },
-        bio: "Expert in algorithm optimization and programming contest preparation."
+        funFact: "Has a perfect memory for algorithms"
       },
       {
         name: "Ziv Lim Zhengheng",
         image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=300&h=300&fit=crop",
         role: "Trainer",
-        medals: { NOI: true },
-        bio: "Specializes in data structures and algorithmic problem-solving strategies."
+        funFact: "Can type 120 words per minute"
       },
     ],
   });
@@ -152,8 +139,7 @@ const OurTeam = () => {
                     name={member.name}
                     image={member.image}
                     role={member.role}
-                    medals={member.medals}
-                    bio={member.bio}
+                    funFact={member.funFact}
                   />
                 ))}
               </div>
