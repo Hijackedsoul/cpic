@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
-import { MessageSquare, Twitter, Github, Mail } from 'lucide-react';
+import { MessageSquare, Instagram, Mail } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -136,22 +136,16 @@ const Contact = () => {
                       url="#"
                     />
                     <SocialLink 
-                      icon={<Twitter className="h-5 w-5" />}
-                      platform="Twitter"
-                      handle="@cpic_official"
-                      url="#"
-                    />
-                    <SocialLink 
-                      icon={<Github className="h-5 w-5" />}
-                      platform="GitHub"
-                      handle="cpic-org"
-                      url="#"
+                      icon={<Instagram className="h-5 w-5" />}
+                      platform="Instagram"
+                      handle="@cpic_sg"
+                      url="https://instagram.com/cpic_sg"
                     />
                     <SocialLink 
                       icon={<Mail className="h-5 w-5" />}
                       platform="Email"
-                      handle="info@cpic.org"
-                      url="mailto:info@cpic.org"
+                      handle="cpic.singapore@gmail.com"
+                      url="mailto:cpic.singapore@gmail.com"
                     />
                   </div>
                 </div>
@@ -160,20 +154,32 @@ const Contact = () => {
                   <h3 className="text-xl font-mono font-bold text-neon-cyan mb-4">FAQ</h3>
                   <div className="space-y-4">
                     <FAQItem 
-                      question="When does the next course start?"
-                      answer="Our next cohort begins in 30 days. Registration closes one week before the start date."
+                      question="Will I have to commit to all 5 days?"
+                      answer="Once you have registered, you will be required to come on at least the final day (on the 20th) and participate in the final contest and obtain a non-zero score to receive an e-certificate of participation. With that being said, all participants are highly encouraged to come on all 5 days to maximise their learning as well as to not fall behind in the content being taught."
                     />
                     <FAQItem 
-                      question="Is there an age requirement?"
-                      answer="Yes, participants must be at least 14 years old. We welcome high school and university students."
+                      question="Will I have to pay to participate?"
+                      answer="No, this course is completely free-of-charge. However, we will not be covering transport fees."
                     />
                     <FAQItem 
-                      question="Do I need prior competitive programming experience?"
-                      answer="No, our course is designed for beginners with basic programming knowledge. We'll teach you everything you need to know."
+                      question="Will meals be provided?"
+                      answer="Yes, we will be catering lunches from an external party."
                     />
                     <FAQItem 
-                      question="What's the time commitment?"
-                      answer="Expect to spend about 10-15 hours per week, including lectures, assignments, and practice."
+                      question="I don't have any background in programming. Can I still participate?"
+                      answer="Yes! You can participate regardless of programming experience. This course is catered towards beginners, and there are no prerequisites required."
+                    />
+                    <FAQItem 
+                      question="Will this course be beneficial to students who are already experienced in competitive programming (CP)?"
+                      answer="Since this course is intended for beginners and students wanting to get into CP, the course content will mostly be basic in difficulty. Hence, already seasoned students wanting to learn advanced techniques and algorithms will not gain much from attending this course. A general benchmark is that students who obtained a bronze medal or above in the National Olympiad in Informatics (NOI) will not find much benefit in attending this course."
+                    />
+                    <FAQItem 
+                      question="How will classes be conducted, and what support will students receive?"
+                      answer="Students will be divided into classes of around 30, with one to two student trainers per class. A central lecture will be live-streamed to all classes, and your trainers will be present in person to guide you through both the lectures and practice tasks."
+                    />
+                    <FAQItem 
+                      question="Who are the trainers?"
+                      answer="The trainers are current secondary school and JC students who are experienced and passionate in competitive programming and wish to use their knowledge to empower more students among the student population. These trainers are the top NOI medalists in Singapore."
                     />
                   </div>
                 </div>
