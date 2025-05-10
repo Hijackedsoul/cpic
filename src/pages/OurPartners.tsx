@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Building2, Building } from 'lucide-react';
+import { Building2, Building, School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const OurPartners = () => {
@@ -16,7 +16,7 @@ const OurPartners = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* NUS Partner Card */}
           <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
             <CardHeader className="pb-0">
@@ -61,6 +61,31 @@ const OurPartners = () => {
               </p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
                 <a href="https://www.comp.nus.edu.sg/~cence/" target="_blank" rel="noopener noreferrer" className="flex w-full">
+                  Visit Website
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Nanyang Junior College Partner Card */}
+          <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
+            <CardHeader className="pb-0">
+              <div className="flex items-center gap-4">
+                <div className="bg-white/5 p-3 rounded-lg">
+                  <School className="h-8 w-8 text-neon-cyan" />
+                </div>
+                <div>
+                  <CardTitle className="text-white text-xl font-mono">Nanyang Junior College</CardTitle>
+                  <CardDescription className="text-neon-magenta">Educational Partner</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <p className="text-gray-400 mb-4">
+                Nanyang Junior College partners with us to foster competitive programming skills among pre-university students and provides venue support for selected programming workshops and events.
+              </p>
+              <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
+                <a href="https://nanyangjc.moe.edu.sg/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
                 </a>
               </Button>
