@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const navigate = useNavigate();
-  const registrationUrl = "https://docs.google.com/forms/d/12GyEr00JHR-5YKopf0HUPA3_WwbPj5znc6zhEfzSzZ0/edit";
+  const registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdwYZI5sAmtDMV88J_f2wsc7avFrbkcx9flsqxyg0l_GTjseQ/viewform?usp=header";
 
   useEffect(() => {
     // Redirect to the Google Form

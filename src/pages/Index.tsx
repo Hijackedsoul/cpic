@@ -9,7 +9,7 @@ const Index = () => {
   // Set the countdown date to June 16, 2025
   const countdownDate = new Date('2025-06-16T00:00:00');
   
-  const registrationLink = "https://docs.google.com/forms/d/12GyEr00JHR-5YKopf0HUPA3_WwbPj5znc6zhEfzSzZ0/edit";
+  const registrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdwYZI5sAmtDMV88J_f2wsc7avFrbkcx9flsqxyg0l_GTjseQ/viewform?usp=header";
 
   return (
     <Layout>

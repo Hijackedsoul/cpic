@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -8,7 +7,7 @@ import Logo from './Logo';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const registrationLink = "https://docs.google.com/forms/d/12GyEr00JHR-5YKopf0HUPA3_WwbPj5znc6zhEfzSzZ0/edit";
+  const registrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdwYZI5sAmtDMV88J_f2wsc7avFrbkcx9flsqxyg0l_GTjseQ/viewform?usp=header";
 
   useEffect(() => {
     const handleScroll = () => {
