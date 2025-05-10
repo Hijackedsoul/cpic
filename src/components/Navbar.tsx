@@ -8,6 +8,7 @@ import Logo from './Logo';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const registrationLink = "https://docs.google.com/forms/d/12GyEr00JHR-5YKopf0HUPA3_WwbPj5znc6zhEfzSzZ0/edit";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,11 +28,11 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 items-center">
           <NavLinks />
-          <Link to="/register">
+          <a href={registrationLink} target="_blank" rel="noopener noreferrer">
             <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black font-mono">
               Register Now
             </Button>
-          </Link>
+          </a>
         </div>
         
         {/* Mobile Menu Button */}
@@ -48,11 +49,11 @@ const Navbar = () => {
         <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10">
           <div className="container mx-auto px-4 py-5 flex flex-col space-y-4">
             <NavLinksMobile setIsOpen={setIsOpen} />
-            <Link to="/register" onClick={() => setIsOpen(false)}>
+            <a href={registrationLink} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
               <Button className="w-full bg-neon-cyan hover:bg-neon-cyan/80 text-black font-mono">
                 Register Now
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import { ArrowRight, Code, Users, Database, Brain, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
@@ -6,8 +6,10 @@ import TypewriterText from '@/components/TypewriterText';
 import CountdownTimer from '@/components/CountdownTimer';
 
 const Index = () => {
-  // Set the countdown date to June 23, 2025
-  const countdownDate = new Date('2025-06-23T00:00:00');
+  // Set the countdown date to June 16, 2025
+  const countdownDate = new Date('2025-06-16T00:00:00');
+  
+  const registrationLink = "https://docs.google.com/forms/d/12GyEr00JHR-5YKopf0HUPA3_WwbPj5znc6zhEfzSzZ0/edit";
 
   return (
     <Layout>
@@ -45,16 +47,16 @@ const Index = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link to="/register">
+              <a href={registrationLink} target="_blank" rel="noopener noreferrer">
                 <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black px-6 py-6 font-mono text-lg w-full sm:w-auto">
                   Register Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
-              <Link to="/about">
+              </a>
+              <a href="/about">
                 <Button variant="outline" className="border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10 px-6 py-6 font-mono text-lg w-full sm:w-auto">
                   Learn More
                 </Button>
-              </Link>
+              </a>
             </div>
             
             <div className="pt-12">
@@ -111,11 +113,11 @@ const Index = () => {
             <p className="text-white/70 mb-8 max-w-xl mx-auto">
               Join hundreds of students who have transformed their problem-solving abilities through our comprehensive curriculum.
             </p>
-            <Link to="/register">
+            <a href={registrationLink} target="_blank" rel="noopener noreferrer">
               <Button className="bg-neon-magenta hover:bg-neon-magenta/80 text-white px-8 py-6 font-mono text-lg">
                 Start Your Journey Today
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
