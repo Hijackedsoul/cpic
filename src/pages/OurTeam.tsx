@@ -16,46 +16,52 @@ const OurTeam = () => {
       {
         name: "Arya Ananda Putra",
         image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
-        role: "Lead Organiser",
+        role: "Head Organiser",
         funFact: "Can solve a Rubik's cube in under 30 seconds",
         imagePosition: "center top"
       },
       {
         name: "Ryan Shaw",
         image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
-        role: "Organiser",
+        role: "Head of Training",
         funFact: "Has visited over 30 countries"
+      },
+      {
+        name: "Raphael Lim Fu En",
+        image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=300&h=300&fit=crop",
+        role: "Training",
+        funFact: "I missed gold by 1 point"
       },
       {
         name: "Francis Ang Zhao Xiong",
         image: "/lovable-uploads/d23eeba1-d1c8-4d90-a5ba-ec7525283470.png",
-        role: "Organiser",
+        role: "Head of Publicity",
         funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
         imagePosition: "center top"
       },
       {
         name: "Edward Yee Mynn Sherng",
         image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
-        role: "Organiser",
+        role: "Publicity",
         funFact: "Amateur astronomy enthusiast"
       },
       {
         name: "Pannawit Supanwassa",
         image: "/lovable-uploads/5a40b946-98a1-495a-91ca-e0d0338143f6.png",
-        role: "Organiser",
+        role: "Head of Operation",
         funFact: "A CP-enthusiastic monkey who founded CPIC but like to yap about quantum physics",
         imagePosition: "center top"
       },
       {
         name: "Seah E-Ket",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
-        role: "Organiser",
+        role: "Operation",
         funFact: "Loves rock climbing"
       },
       {
         name: "Jayden Tiew",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
-        role: "Organiser",
+        role: "Operation",
         funFact: "Can recite pi to 100 decimal places"
       },
     ],
