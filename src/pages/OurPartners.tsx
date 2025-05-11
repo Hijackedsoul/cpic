@@ -51,7 +51,7 @@ const OurPartners = () => {
               </div>
             </CardHeader>
             <CardContent className="pt-6">
-              <p className="text-gray-400 mb-4">Nanyang Junior College's Competitive Programming Club (NYCP) partners with us in organising and coordinating the event logistics, and handling essential administrative tasks. </p>
+              <p className="text-gray-400 mb-4">Nanyang Junior College's Competitive Programming Club (NYCP) partners with us in coordinating the event logistics, and handling essential administrative tasks.</p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
                 <a href="https://nanyangjc.moe.edu.sg/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
