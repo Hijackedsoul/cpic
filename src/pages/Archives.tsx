@@ -54,32 +54,34 @@ const Archives = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Photo Archive Section */}
+                <div className="bg-black/50 rounded-lg p-6 border border-gray-800 mt-8">
+                  <div className="flex items-center mb-4">
+                    <Camera className="mr-2 h-5 w-5 text-neon-cyan" />
+                    <h3 className="text-xl font-bold">Photo Archive</h3>
+                  </div>
+                  
+                  <p className="text-gray-300 mb-4">
+                    Browse through our collection of photos from past CPIC events. Relive the moments, challenges, and triumphs from our competitive programming courses.
+                  </p>
+                  
+                  <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black">
+                    <a 
+                      href="https://nanyangjc.smugmug.com/2024/Competitive-Programming-Introductory-Course" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex w-full"
+                    >
+                      View Photo Gallery
+                    </a>
+                  </Button>
+                </div>
               </AccordionContent>
+              
             </AccordionItem>
           </Accordion>
           
-          {/* Photo Archive Section */}
-          <div className="bg-black/50 rounded-lg p-6 border border-gray-800 mt-8">
-            <div className="flex items-center mb-4">
-              <Camera className="mr-2 h-5 w-5 text-neon-cyan" />
-              <h3 className="text-xl font-bold">Photo Archive</h3>
-            </div>
-            
-            <p className="text-gray-300 mb-4">
-              Browse through our collection of photos from past CPIC events. Relive the moments, challenges, and triumphs from our competitive programming courses.
-            </p>
-            
-            <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black">
-              <a 
-                href="https://nanyangjc.smugmug.com/2024/Competitive-Programming-Introductory-Course" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex w-full"
-              >
-                View Photo Gallery
-              </a>
-            </Button>
-          </div>
           
           <div className="mt-12 text-center">
             <p className="text-gray-400">More events will be added to our archives as we continue to grow.</p>
