@@ -82,133 +82,116 @@ const About = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Course <span className="text-neon-cyan">Structure</span></h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 1: Fundamentals</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 1: Foundations</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Bonding
+                  <span>Welcome and team bonding activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Introduction to competitive programming
+                  <span>Introduction to competitive programming landscape</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Setting up your coding environment
+                  <span>Setting up your development environment</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  C++ syntax
+                  <span>C++ fundamentals for competitive programming</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 2: STL Data Structures</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 2: Data Structures</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Fun morning contest
+                  <span>Morning warm-up coding contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Time complexity, stl ds, sorting
+                  <span>Algorithm time complexity analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Standard Template Library (STL)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Sorting algorithms and techniques</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 3: Intermediate Data structures and Greedy Algorithms</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 3: Algorithms</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Fun morning Contest
+                  <span>Morning problem-solving contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Prefix sums, intermediate ds and greedy algorithms
+                  <span>Prefix sums and range queries</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Intermediate data structures</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Greedy algorithm strategies</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 4: Classic Techniques</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 4: Techniques</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Fun morning contest
+                  <span>Interactive morning contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Classic techniques frequently used in competitions
+                  <span>Advanced problem-solving techniques</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Common competitive programming patterns</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Optimization strategies</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 5: Final Day!</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 5: Final Day</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Address by Guest of Honours
+                  <span>Special address by guest speakers</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Final Contest!(chance to win amazing prizes!)
+                  <span>Grand final contest with prizes</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Awards ceremony and celebration</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  <span>Next steps in your CP journey</span>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Topics Covered section */}
-      <section className="py-20 bg-[#0C0C0C]">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Topics <span className="text-neon-cyan">Covered</span></h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <TopicCard
-              title="Algorithmic Thinking"
-              items={[
-                "Problem decomposition",
-                "Pattern recognition",
-                "Algorithm design techniques",
-                "Optimization strategies"
-              ]}
-            />
-            
-            <TopicCard
-              title="Data Structures"
-              items={[
-                "Arrays and strings",
-                "Stacks and queues",
-                "Trees and graphs",
-                "Hash tables and heaps"
-              ]}
-            />
-            
-            <TopicCard
-              title="Advanced Algorithms"
-              items={[
-                "Sorting and searching",
-                "Graph algorithms",
-                "Dynamic programming",
-                "Greedy algorithms"
-              ]}
-            />
-            
-            <TopicCard
-              title="Problem-Solving"
-              items={[
-                "Contest strategies",
-                "Time management",
-                "Debugging techniques",
-                "Optimization techniques"
-              ]}
-            />
           </div>
         </div>
       </section>
@@ -235,27 +218,6 @@ const About = () => {
         </div>
       </section>
     </Layout>
-  );
-};
-
-interface TopicCardProps {
-  title: string;
-  items: string[];
-}
-
-const TopicCard = ({ title, items }: TopicCardProps) => {
-  return (
-    <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur h-full">
-      <h3 className="text-xl font-mono font-bold text-neon-cyan mb-4">{title}</h3>
-      <ul className="space-y-2 text-white/70">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-start">
-            <span className="text-neon-magenta font-mono mr-2">→</span>
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 };
 
