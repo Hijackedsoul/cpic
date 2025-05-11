@@ -1,13 +1,10 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building, School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const OurPartners = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4">Our <span className="text-neon-cyan">Partners</span></h1>
@@ -26,14 +23,12 @@ const OurPartners = () => {
                 </div>
                 <div>
                   <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence</CardTitle>
-                  <CardDescription className="text-neon-magenta">Technical Partner</CardDescription>
+                  <CardDescription className="text-neon-magenta">Venue Partner</CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
-              <p className="text-gray-400 mb-4">
-                The Centre for Nurturing Computing Excellence (CenCE) collaborates with us to provide advanced training materials and technical expertise for our competitive programming curriculum.
-              </p>
+              <p className="text-gray-400 mb-4">The Centre for Nurturing Computing Excellence (CenCE) collaborates with us to provide an conducive environment for our competitive programming course. </p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
                 <a href="https://www.comp.nus.edu.sg/~cence/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
@@ -68,8 +63,6 @@ const OurPartners = () => {
           </Card>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default OurPartners;
