@@ -28,7 +28,7 @@ const OurTeam = () => {
       },
       {
         name: "Raphael Lim Fu En",
-        image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=300&h=300&fit=crop",
         role: "Training",
         funFact: "I missed gold by 1 point"
       },
@@ -41,7 +41,7 @@ const OurTeam = () => {
       },
       {
         name: "Edward Yee Mynn Sherng",
-        image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=300&fit=crop",
         role: "Publicity",
         funFact: "Amateur astronomy enthusiast"
       },
@@ -54,13 +54,13 @@ const OurTeam = () => {
       },
       {
         name: "Seah E-Ket",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
         role: "Operation",
         funFact: "Loves rock climbing"
       },
       {
         name: "Jayden Tiew",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
         role: "Operation",
         funFact: "Can recite pi to 100 decimal places"
       },
@@ -68,7 +68,7 @@ const OurTeam = () => {
     media: [
       {
         name: "Nguyen Chi Ken",
-        image: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=300&h=300&fit=crop",
         role: "Head of Media",
         funFact: "Has a collection of vintage cameras"
       }
