@@ -15,14 +15,14 @@ const OurTeam = () => {
     organisers: [
       {
         name: "Arya Ananda Putra",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop",
         role: "Head Organiser",
         funFact: "Can solve a Rubik's cube in under 30 seconds",
         imagePosition: "center top"
       },
       {
         name: "Ryan Shaw",
-        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
         role: "Head of Training",
         funFact: "Has visited over 30 countries"
       },
