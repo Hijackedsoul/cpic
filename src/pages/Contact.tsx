@@ -1,20 +1,12 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { AtSign, MessageCircle, Instagram, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from '@/components/ui/accordion';
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 const Contact = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero section */}
       <section className="py-20 bg-black relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -42,29 +34,16 @@ const Contact = () => {
               <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
               <form className="space-y-4">
                 <div>
-                  <Input
-                    placeholder="Your Name"
-                    className="bg-black/40 border-white/10 text-white"
-                  />
+                  <Input placeholder="Your Name" className="bg-black/40 border-white/10 text-white" />
                 </div>
                 <div>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    className="bg-black/40 border-white/10 text-white"
-                  />
+                  <Input type="email" placeholder="Your Email" className="bg-black/40 border-white/10 text-white" />
                 </div>
                 <div>
-                  <Input
-                    placeholder="Subject"
-                    className="bg-black/40 border-white/10 text-white"
-                  />
+                  <Input placeholder="Subject" className="bg-black/40 border-white/10 text-white" />
                 </div>
                 <div>
-                  <Textarea
-                    placeholder="Your Message"
-                    className="min-h-32 bg-black/40 border-white/10 text-white"
-                  />
+                  <Textarea placeholder="Your Message" className="min-h-32 bg-black/40 border-white/10 text-white" />
                 </div>
                 <Button className="bg-neon-cyan text-black hover:bg-neon-cyan/80">
                   Send Message
@@ -81,7 +60,7 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-neon-cyan" />
                   </div>
                   <div>
-                    <h3 className="text-white font-mono font-bold">Phone</h3>
+                    <h3 className="text-white font-mono font-bold">Instagram</h3>
                     <p className="text-gray-400">+65 1234 5678</p>
                   </div>
                 </div>
@@ -187,8 +166,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Contact;
