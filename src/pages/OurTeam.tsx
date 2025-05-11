@@ -76,7 +76,7 @@ const OurTeam = () => {
     trainers: [
       {
         name: "Ryan Shaw",
-        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
+        //image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
         role: "Head Trainer",
         funFact: "Once debugged code for 36 hours straight"
       },
