@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import ProfilePlaceholder from './ProfilePlaceholder';
 
 interface TrainerCardProps {
   name: string;
-  image: string;
+  image?: string;
   role: string;
   funFact?: string;
   imagePosition?: string;
@@ -23,12 +24,16 @@ const TrainerCard = ({
   return (
     <div className="rounded-lg bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-colors duration-300 group">
       <div className="aspect-square relative overflow-hidden">
-        <img 
-          src={image} 
-          alt={name} 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          style={{ objectPosition: imagePosition }}
-        />
+        {image ? (
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            style={{ objectPosition: imagePosition }}
+          />
+        ) : (
+          <ProfilePlaceholder />
+        )}
       </div>
       <div className="p-4 space-y-2">
         <div className="flex items-center gap-2">

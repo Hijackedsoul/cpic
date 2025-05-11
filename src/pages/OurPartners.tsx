@@ -1,8 +1,10 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building, School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const OurPartners = () => {
   return <Layout>
       <div className="container mx-auto px-4 py-16">
@@ -28,7 +30,7 @@ const OurPartners = () => {
             <CardContent className="pt-6">
               <p className="text-gray-400 mb-4">The Centre for Nurturing Computing Excellence (CenCE) collaborates with us to provide an conducive environment for our competitive programming course. </p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
-                <a href="https://www.comp.nus.edu.sg/~cence/" target="_blank" rel="noopener noreferrer" className="flex w-full">
+                <a href="https://cence.comp.nus.edu.sg/cence/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
                 </a>
               </Button>
@@ -51,7 +53,7 @@ const OurPartners = () => {
             <CardContent className="pt-6">
               <p className="text-gray-400 mb-4">Nanyang Junior College's Competitive Programming Club (NYCP) partners with us in coordinating the event logistics, and handling essential administrative tasks.</p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
-                <a href="https://nanyangjc.moe.edu.sg/" target="_blank" rel="noopener noreferrer" className="flex w-full">
+                <a href="https://nanyangjc.smugmug.com/2024/Competitive-Programming-Introductory-Course" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
                 </a>
               </Button>
@@ -61,4 +63,5 @@ const OurPartners = () => {
       </div>
     </Layout>;
 };
+
 export default OurPartners;
