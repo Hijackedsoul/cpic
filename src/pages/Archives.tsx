@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -26,7 +25,7 @@ const Archives = () => {
                   <div className="bg-black/40 border border-gray-800 rounded-lg p-6 hover:border-neon-cyan/50 transition-colors">
                     <div className="flex items-center mb-4">
                       <Calendar className="mr-2 h-5 w-5 text-neon-cyan" />
-                      <h3 className="text-xl font-bold">CPIC June Workshop 2024</h3>
+                      <h3 className="text-xl font-bold">CPIC 2024</h3>
                     </div>
                     
                     <div className="space-y-4">
@@ -37,16 +36,16 @@ const Archives = () => {
                       
                       <div>
                         <h4 className="text-lg font-semibold text-neon-cyan">Date & Time</h4>
-                        <p>June 20-24, 2024 | 9:00 AM - 5:00 PM</p>
+                        <p>June 18-21, 2024 | 9:00 AM - 5:00 PM</p>
                       </div>
                       
                       <div>
                         <h4 className="text-lg font-semibold text-neon-cyan">Highlights</h4>
                         <ul className="list-disc list-inside space-y-1 ml-2">
                           <li>Intensive 4-day programming boot camp</li>
-                          <li>100+ participants from 20+ different secondary and JC schools</li>
-                          <li>Final contest with cash prizes and certificates</li>
-                          <li>Special guest lecture by NOI 2024 Champion</li>
+                          <li>120+ participants from 20+ different secondary schools and JCs</li>
+                          <li>Final contest with prizes and certificates</li>
+                          <li>Special lecture by NOI 2024 Champion</li>
                         </ul>
                       </div>
                     </div>
