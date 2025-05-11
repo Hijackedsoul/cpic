@@ -84,8 +84,12 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 1-2: Fundamentals</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 1: Fundamentals</h3>
               <ul className="space-y-3 text-white/70">
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  Bonding
+                </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
                   Introduction to competitive programming
@@ -96,67 +100,63 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Time and space complexity analysis
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Basic data structures: Arrays, strings
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Introduction to algorithms
+                  C++ syntax
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 3-4: Intermediate</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 2: STL Data Structures</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Advanced data structures
+                  Fun morning contest
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Searching and sorting algorithms
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Graph theory basics
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Dynamic programming introduction
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Daily coding contests
+                  Time complexity, stl ds, sorting
                 </li>
               </ul>
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 5: Advanced & Finale</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 3: Intermediate Data structures and Greedy Algorithms</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Advanced problem-solving techniques
+                  Fun morning Contest
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Optimization strategies
+                  Prefix sums, intermediate ds and greedy algorithms
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 4: Classic Techniques</h3>
+              <ul className="space-y-3 text-white/70">
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  Fun morning contest
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Mock competitive programming contest
+                  Classic techniques frequently used in competitions
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 5: Final Day!</h3>
+              <ul className="space-y-3 text-white/70">
+                <li className="flex items-start">
+                  <span className="text-neon-magenta font-mono mr-2">→</span>
+                  Address by Guest of Honours
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Awards and recognition
-                </li>
-                <li className="flex items-start">
-                  <span className="text-neon-magenta font-mono mr-2">→</span>
-                  Future learning pathways
+                  Final Contest!(chance to win amazing prizes!)
                 </li>
               </ul>
             </div>

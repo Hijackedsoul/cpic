@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import TypewriterText from '@/components/TypewriterText';
 import CountdownTimer from '@/components/CountdownTimer';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   // Set the countdown date to June 16, 2025
@@ -52,11 +53,11 @@ const Index = () => {
                   Register Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
-              <a href="/about">
+              <Link to="/about">
                 <Button variant="outline" className="border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10 px-6 py-6 font-mono text-lg w-full sm:w-auto">
                   Learn More
                 </Button>
-              </a>
+              </Link>
             </div>
             
             <div className="pt-12">
@@ -113,11 +114,11 @@ const Index = () => {
             <p className="text-white/70 mb-8 max-w-xl mx-auto">
               Join hundreds of students who have transformed their problem-solving abilities through our comprehensive curriculum.
             </p>
-            <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+            <Link to="/about">
               <Button className="bg-neon-magenta hover:bg-neon-magenta/80 text-white px-8 py-6 font-mono text-lg">
                 Start Your Journey Today
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
-import { AtSign, Instagram, MapPin, Phone } from 'lucide-react';
+import { AtSign, Discord, Instagram, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -78,20 +78,6 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-neon-cyan/10 p-3 rounded-lg mr-4">
-                    <MapPin className="h-6 w-6 text-neon-cyan" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-mono font-bold">Location</h3>
-                    <p className="text-gray-400">
-                      NUS School of Computing<br />
-                      13 Computing Drive<br />
-                      Singapore 117417
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-neon-cyan/10 p-3 rounded-lg mr-4">
                     <Phone className="h-6 w-6 text-neon-cyan" />
                   </div>
                   <div>
@@ -115,6 +101,9 @@ const Contact = () => {
                   <div className="flex space-x-4">
                     <a href="https://www.instagram.com/cpic_sg/" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
                       <Instagram className="h-5 w-5 text-neon-cyan" />
+                    </a>
+                    <a href="https://discord.gg/yourserver" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
+                      <Discord className="h-5 w-5 text-neon-cyan" />
                     </a>
                   </div>
                 </div>
