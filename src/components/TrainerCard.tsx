@@ -7,13 +7,15 @@ interface TrainerCardProps {
   image: string;
   role: string;
   funFact?: string;
+  imagePosition?: string;
 }
 
 const TrainerCard = ({ 
   name, 
   image, 
   role, 
-  funFact
+  funFact,
+  imagePosition = "center" // Default to center if not specified
 }: TrainerCardProps) => {
   // Generate initials for avatar fallback
   const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
@@ -25,6 +27,7 @@ const TrainerCard = ({
           src={image} 
           alt={name} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: imagePosition }}
         />
       </div>
       <div className="p-4 space-y-2">
