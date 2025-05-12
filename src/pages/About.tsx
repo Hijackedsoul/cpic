@@ -204,15 +204,15 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-black/40 p-6 rounded-lg border border-white/10">
               <p className="italic text-gray-300 mb-4">
-                "CPIC opened my eyes to the world of competitive programming. The instructors were knowledgeable and patient. I went from struggling with basic algorithms to confidently solving IOI problems."
+              "coming soon..."
               </p>
-              <p className="font-bold text-white">- Ryan T., Hwa Chong Institution</p>
+              <p className="font-bold text-white">- name </p>
             </div>
             <div className="bg-black/40 p-6 rounded-lg border border-white/10">
               <p className="italic text-gray-300 mb-4">
-                "The most valuable aspect of CPIC was how it taught me to approach problems systematically. These skills have helped me not just in programming competitions, but also in my regular schoolwork."
+              "coming soon..."
               </p>
-              <p className="font-bold text-white">- Meilin C., Raffles Girls' School</p>
+              <p className="font-bold text-white">- name </p>
             </div>
           </div>
         </div>
