@@ -152,5 +152,12 @@ export const teamData: TeamData = {
       funFact: "When I asked my mom this question to get some ideas, she used this opportunity to bash me",
       imagePosition: "center 30%"
     },
+    {
+      name: "Bunnath Tith",
+      //image: "/lovable-uploads/78ace439-20dc-4ad9-b1fa-778036331a9b.png",
+      role: "Trainer",
+      funFact: "",
+      imagePosition: "center"
+    },
   ],
 };
