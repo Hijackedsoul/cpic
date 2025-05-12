@@ -17,7 +17,7 @@ export const teamData: TeamData = {
   organisers: [
     {
       name: "Arya Ananda Putra",
-      image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png",
+      image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png", // Changed to Raphael's image
       role: "Head Organiser",
       funFact: "part time human, full time compiler of shower thoughts",
       imagePosition: "center top"
@@ -30,7 +30,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Raphael Lim Fu En",
-      image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
+      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png", // Changed to Truong's image
       role: "Training",
       funFact: "I missed gold by 1 point"
     },
@@ -81,7 +81,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Raphael Lim Fu En",
-      image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
+      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png", // Changed to Truong's image
       role: "Trainer",
       funFact: "I missed gold by 1 point"
     },
@@ -139,7 +139,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Truong Le Huy",
-      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
+      image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png", // Changed to Arya's image
       role: "Trainer",
       funFact: "I once solved a Rubik's Cube in 6.65 seconds 👅👅👅",
       imagePosition: "center top"
