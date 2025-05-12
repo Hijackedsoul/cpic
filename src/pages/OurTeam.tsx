@@ -77,13 +77,13 @@ const OurTeam = () => {
       {
         name: "Ryan Shaw",
         //image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=300&fit=crop",
-        role: "Head of Training",
+        role: "Head Trainer",
         funFact: "Once debugged code for 36 hours straight"
       },
       {
         name: "Raphael Lim Fu En",
         //image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?w=300&h=300&fit=crop",
-        role: "Training",
+        role: "Trainer",
         funFact: "I missed gold by 1 point"
       },
       {
