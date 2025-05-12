@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import TrainerCard from '@/components/TrainerCard';
@@ -15,7 +14,7 @@ const OurTeam = () => {
     organisers: [
       {
         name: "Arya Ananda Putra",
-        image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png",
+        image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png", // Swapped to Truong's image
         role: "Head Organiser",
         funFact: "part time human, full time compiler of shower thoughts",
         imagePosition: "center top"
@@ -28,7 +27,7 @@ const OurTeam = () => {
       },
       {
         name: "Raphael Lim Fu En",
-        image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
+        image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png", // Swapped to Arya's image
         role: "Training",
         funFact: "I missed gold by 1 point"
       },
@@ -82,7 +81,7 @@ const OurTeam = () => {
       },
       {
         name: "Raphael Lim Fu En",
-        image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
+        image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png", // Swapped to Arya's image
         role: "Trainer",
         funFact: "I missed gold by 1 point"
       },
@@ -140,7 +139,7 @@ const OurTeam = () => {
       },
       {
         name: "Truong Le Huy",
-        image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
+        image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png", // Swapped to Raphael's image
         role: "Trainer",
         funFact: "I once solved a Rubik's Cube in 6.65 seconds 👅👅👅",
         imagePosition: "center top"
@@ -210,4 +209,3 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
-
