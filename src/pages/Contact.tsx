@@ -29,7 +29,7 @@ const Contact = () => {
       <section className="py-20 bg-[#0C0C0C]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            {/* Contact form */}
+            /* {/* Contact form */}
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
               <form className="space-y-4">
@@ -49,7 +49,7 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
-            </div>
+            </div> */
 
             {/* Contact info */}
             <div>
