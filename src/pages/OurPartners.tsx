@@ -53,7 +53,7 @@ const OurPartners = () => {
             <CardContent className="pt-6">
               <p className="text-gray-400 mb-4">Nanyang Junior College's Competitive Programming Club (NYCP) partners with us in coordinating the event logistics, and handling essential administrative tasks.</p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
-                <a href="https://nanyangjc.smugmug.com/2024/Competitive-Programming-Introductory-Course" target="_blank" rel="noopener noreferrer" className="flex w-full">
+                <a href="https://www.nanyangjc.moe.edu.sg/nanyang-competitive-programming-club-nycp/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
                 </a>
               </Button>
