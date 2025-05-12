@@ -1,11 +1,25 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import Layout from '@/components/Layout';
-import { AtSign, MessageCircle, Instagram, MapPin, Phone } from 'lucide-react';
+import { AtSign, MessageCircle, Instagram, MapPin, Discord } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const mailtoLink = `mailto:cpic.singapore@gmail.com?subject=CPIC%202025%3A%20${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}%0A%0ARegards%2C%20%0A${encodeURIComponent(name)}%0AEmail%20%3A%20${encodeURIComponent(email)}`;
+    window.location.href = mailtoLink;
+  };
+
   return <Layout>
       {/* Hero section */}
       <section className="py-20 bg-black relative overflow-hidden">
@@ -32,20 +46,45 @@ const Contact = () => {
             {/* Contact form */}
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <Input placeholder="Your Name" className="bg-black/40 border-white/10 text-white" />
+                  <Input 
+                    placeholder="Your Name" 
+                    className="bg-black/40 border-white/10 text-white" 
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
                 </div>
                 <div>
-                  <Input type="email" placeholder="Your Email" className="bg-black/40 border-white/10 text-white" />
+                  <Input 
+                    type="email" 
+                    placeholder="Your Email" 
+                    className="bg-black/40 border-white/10 text-white" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
                 </div>
                 <div>
-                  <Input placeholder="Subject" className="bg-black/40 border-white/10 text-white" />
+                  <Input 
+                    placeholder="Subject" 
+                    className="bg-black/40 border-white/10 text-white" 
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    required
+                  />
                 </div>
                 <div>
-                  <Textarea placeholder="Your Message" className="min-h-32 bg-black/40 border-white/10 text-white" />
+                  <Textarea 
+                    placeholder="Your Message" 
+                    className="min-h-32 bg-black/40 border-white/10 text-white" 
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  />
                 </div>
-                <Button className="bg-neon-cyan text-black hover:bg-neon-cyan/80">
+                <Button type="submit" className="bg-neon-cyan text-black hover:bg-neon-cyan/80">
                   Send Message
                 </Button>
               </form>
@@ -55,16 +94,6 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-neon-cyan/10 p-3 rounded-lg mr-4">
-                    <Phone className="h-6 w-6 text-neon-cyan" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-mono font-bold">Instagram</h3>
-                    <p className="text-gray-400">+65 1234 5678</p>
-                  </div>
-                </div>
-
                 <div className="flex items-start">
                   <div className="bg-neon-cyan/10 p-3 rounded-lg mr-4">
                     <AtSign className="h-6 w-6 text-neon-cyan" />
@@ -82,7 +111,7 @@ const Contact = () => {
                       <Instagram className="h-5 w-5 text-neon-cyan" />
                     </a>
                     <a href="https://discord.gg/yourserver" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
-                      <MessageCircle className="h-5 w-5 text-neon-cyan" />
+                      <Discord className="h-5 w-5 text-neon-cyan" />
                     </a>
                   </div>
                 </div>
