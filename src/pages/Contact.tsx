@@ -29,27 +29,7 @@ const Contact = () => {
       <section className="py-20 bg-[#0C0C0C]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            /* {/* Contact form */}
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
-              <form className="space-y-4">
-                <div>
-                  <Input placeholder="Your Name" className="bg-black/40 border-white/10 text-white" />
-                </div>
-                <div>
-                  <Input type="email" placeholder="Your Email" className="bg-black/40 border-white/10 text-white" />
-                </div>
-                <div>
-                  <Input placeholder="Subject" className="bg-black/40 border-white/10 text-white" />
-                </div>
-                <div>
-                  <Textarea placeholder="Your Message" className="min-h-32 bg-black/40 border-white/10 text-white" />
-                </div>
-                <Button className="bg-neon-cyan text-black hover:bg-neon-cyan/80">
-                  Send Message
-                </Button>
-              </form>
-            </div> */
+            
 
             {/* Contact info */}
             <div>
