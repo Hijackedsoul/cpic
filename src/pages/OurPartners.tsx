@@ -23,7 +23,7 @@ const OurPartners = () => {
                 </div>
                 <div>
                   <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence</CardTitle>
-                  <CardDescription className="text-neon-magenta">Venue Partner</CardDescription>
+                  <CardDescription className="text-neon-magenta">Logistics Partner</CardDescription>
                 </div>
               </div>
             </CardHeader>
