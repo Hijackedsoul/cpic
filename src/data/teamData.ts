@@ -62,7 +62,8 @@ export const teamData: TeamData = {
       name: "Jayden Tiew",
       image: "/lovable-uploads/45bfd287-2395-417f-8d7c-b52cb0add82e.png",
       role: "Operation",
-      funFact: "Just another washed up programmer who loves problem solving, food, and of course, cpic!"
+      funFact: "Just another washed up programmer who loves problem solving, food, and of course, cpic!",
+      imagePosition: "center" // Updated to show full face
     },
   ],
   media: [
@@ -92,7 +93,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Nguyen Dinh Anh",
-      image: "/lovable-uploads/3069c6af-4890-4762-b797-21baa33b9733.png",
+      image: "/lovable-uploads/e744596c-1de3-4ec3-9bc3-61bf1eee5b7a.png", // Swapped with Derrick's image
       role: "Trainer",
       funFact: "I love taking long walks to the fridge",
       imagePosition: "center top"
@@ -125,10 +126,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Derrick Lukimin",
-      image: "/lovable-uploads/e744596c-1de3-4ec3-9bc3-61bf1eee5b7a.png",
+      image: "/lovable-uploads/3069c6af-4890-4762-b797-21baa33b9733.png", // Swapped with Nguyen's image
       role: "Trainer",
       funFact: "My IOI selection rank was higher than my NOI rank this year which makes absolutely no sense",
-      imagePosition: "center top"
+      imagePosition: "center" // Updated to show full face
     },
     {
       name: "William Edward Sugiharto",
