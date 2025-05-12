@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
-import { AtSign, MessageCircle, Instagram, MapPin, Discord } from 'lucide-react';
+import { AtSign, MessageCircle, Instagram, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -111,7 +110,7 @@ const Contact = () => {
                       <Instagram className="h-5 w-5 text-neon-cyan" />
                     </a>
                     <a href="https://discord.gg/yourserver" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
-                      <Discord className="h-5 w-5 text-neon-cyan" />
+                      <MessageCircle className="h-5 w-5 text-neon-cyan" />
                     </a>
                   </div>
                 </div>
