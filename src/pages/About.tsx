@@ -1,5 +1,5 @@
-
 import Layout from '@/components/Layout';
+import TestimonialCard from '@/components/TestimonialCard';
 
 const About = () => {
   return (
@@ -110,7 +110,7 @@ const About = () => {
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Morning warm-up coding contest</span>
+                  <span>Morning contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -132,11 +132,11 @@ const About = () => {
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Morning problem-solving contest</span>
+                  <span>Morning contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Prefix sums and range queries</span>
+                  <span>Range queries</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -154,7 +154,7 @@ const About = () => {
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Interactive morning contest</span>
+                  <span>Morning contest</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -180,7 +180,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Grand final contest with prizes</span>
+                  <span>Morning contest with prizes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -202,18 +202,18 @@ const About = () => {
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Student <span className="text-neon-cyan">Testimonials</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-black/40 p-6 rounded-lg border border-white/10">
-              <p className="italic text-gray-300 mb-4">
-              "coming soon..."
-              </p>
-              <p className="font-bold text-white">- name </p>
-            </div>
-            <div className="bg-black/40 p-6 rounded-lg border border-white/10">
-              <p className="italic text-gray-300 mb-4">
-              "coming soon..."
-              </p>
-              <p className="font-bold text-white">- name </p>
-            </div>
+            <TestimonialCard
+              name="Tien Kai"
+              role="CPIC 2024 Participant"
+              testimonial="In the span of a short 4 days, CPIC helped me to gain my footing in competitive programming, and motivated me to explore more into this field. I gained many connections with trainers who were genuinely impressive and did not hesitate to answer my questions even after the course. Now I'm out here grinding for NOI and suffering... but like, in a good way."
+              rating={5}
+            />
+            <TestimonialCard
+              name="Prudent"
+              role="CPIC 2024 Participant"
+              testimonial="I joined CPIC knowing almost nothing about competitive programming—just vibes and curiosity. But thanks to the amazing mentors and structured lessons, I actually understood things (crazy, I know). Fast forward: I've won medals at NOI and a bunch of other CP contests. CPIC really gave me the push I didn't know I needed."
+              rating={5}
+            />
           </div>
         </div>
       </section>
