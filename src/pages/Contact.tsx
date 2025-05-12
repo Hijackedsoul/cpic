@@ -109,7 +109,7 @@ const Contact = () => {
                     <a href="https://www.instagram.com/cpic_sg/" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
                       <Instagram className="h-5 w-5 text-neon-cyan" />
                     </a>
-                    <a href="https://discord.gg/yourserver" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
+                    <a href="https://discord.gg/zkaTT54dUm" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
                       <MessageCircle className="h-5 w-5 text-neon-cyan" />
                     </a>
                   </div>
