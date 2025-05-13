@@ -72,8 +72,8 @@ export const teamData: TeamData = {
       funFact: "Has a collection of vintage cameras"
     },
     {
-      name: "Nguyễn Quang Diệu"
-      role: "Media & Publicity"
+      name: "Nguyễn Quang Diệu",
+      role: "Media & Publicity",
       funFact: "Food and music makes me happy"
     }
   ],
