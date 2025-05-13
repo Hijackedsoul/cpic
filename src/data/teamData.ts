@@ -142,7 +142,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/ea71a862-7717-42c6-bb32-f65af853b39c.png",
       role: "Trainer",
       funFact: "I have a pet otter:)",
-      imagePosition: "center 30%"
+      imagePosition: "center 40%"
     },
     {
       name: "Truong Le Huy",
