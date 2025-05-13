@@ -1,3 +1,4 @@
+
 export interface TeamMember {
   name: string;
   image?: string;
@@ -19,7 +20,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
       role: "Head Organiser",
       funFact: "part time human, full time compiler of shower thoughts",
-      imagePosition: "center 20%"
+      imagePosition: "center 10%" // Shifted further up
     },
     {
       name: "Ryan Shaw",
@@ -35,13 +36,14 @@ export const teamData: TeamData = {
     },
     {
       name: "Francis Ang Zhao Xiong",
-      image: "/lovable-uploads/d23eeba1-d1c8-4d90-a5ba-ec7525283470.png",
+      image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", // Updated to new image
       role: "Head of Outreach",
       funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
       imagePosition: "center top"
     },
     {
       name: "Edward Yee Mynn Sherng",
+      image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", // Updated to new image
       role: "Outreach",
       funFact: "Amateur astronomy enthusiast"
     },
@@ -62,7 +64,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/45bfd287-2395-417f-8d7c-b52cb0add82e.png",
       role: "Operation",
       funFact: "Just another washed up programmer who loves problem solving, food, and of course, cpic!",
-      imagePosition: "center 40%"
+      imagePosition: "center 45%" // Shifted down
     },
   ],
   media: [
@@ -100,7 +102,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/e744596c-1de3-4ec3-9bc3-61bf1eee5b7a.png",
       role: "Trainer",
       funFact: "I love taking long walks to the fridge",
-      imagePosition: "center top"
+      imagePosition: "center 15%" // Shifted further up
     },
     {
       name: "Han Phyo Oo",
@@ -160,6 +162,12 @@ export const teamData: TeamData = {
       name: "Bunnath Tith",
       role: "Trainer",
       funFact: "",
+      imagePosition: "center"
+    },
+    {
+      name: "Tung Jia Ray", // Added new team member
+      role: "Trainer",
+      funFact: "math",
       imagePosition: "center"
     },
   ],

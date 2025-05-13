@@ -38,7 +38,6 @@ const TrainerCard = ({
       <div className="p-4 space-y-2">
         <div className="flex items-center gap-2">
           <Avatar className="h-8 w-8 border border-neon-cyan/30">
-            <AvatarImage src={image} alt={name} />
             <AvatarFallback className="bg-black text-neon-cyan text-xs">{initials}</AvatarFallback>
           </Avatar>
           <h3 className="font-mono text-lg font-bold text-white group-hover:text-neon-cyan transition-colors">{name}</h3>
