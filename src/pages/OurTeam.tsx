@@ -11,6 +11,10 @@ const OurTeam = () => {
   const { toast } = useToast();
   const [currentTab, setCurrentTab] = useState("organisers");
 
+  const handleTabChange = (value: string) => {
+    setCurrentTab(value);
+  };
+
   return (
     <Layout>
       <div className="container mx-auto px-4 py-16">
@@ -21,8 +25,8 @@ const OurTeam = () => {
           </p>
         </div>
 
-        <Tabs value={currentTab} className="w-full max-w-4xl mx-auto">
-          <TeamTabs currentTab={currentTab} onTabChange={setCurrentTab} />
+        <Tabs value={currentTab} onValueChange={handleTabChange} className="w-full max-w-4xl mx-auto">
+          <TeamTabs currentTab={currentTab} onTabChange={handleTabChange} />
           
           {Object.entries(teamData).map(([category, members]) => (
             <TeamTabContent 

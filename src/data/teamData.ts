@@ -1,4 +1,3 @@
-
 export interface TeamMember {
   name: string;
   image?: string;
@@ -17,10 +16,10 @@ export const teamData: TeamData = {
   organisers: [
     {
       name: "Arya Ananda Putra",
-      image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png", // Changed to Raphael's image
+      image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
       role: "Head Organiser",
       funFact: "part time human, full time compiler of shower thoughts",
-      imagePosition: "center top"
+      imagePosition: "center 20%"
     },
     {
       name: "Ryan Shaw",
@@ -30,20 +29,20 @@ export const teamData: TeamData = {
     },
     {
       name: "Raphael Lim Fu En",
-      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png", // Changed to Truong's image
+      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
       role: "Training",
       funFact: "I missed gold by 1 point"
     },
     {
       name: "Francis Ang Zhao Xiong",
       image: "/lovable-uploads/d23eeba1-d1c8-4d90-a5ba-ec7525283470.png",
-      role: "Head of Publicity",
+      role: "Head of Outreach",
       funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
       imagePosition: "center top"
     },
     {
       name: "Edward Yee Mynn Sherng",
-      role: "Publicity",
+      role: "Outreach",
       funFact: "Amateur astronomy enthusiast"
     },
     {
@@ -56,14 +55,14 @@ export const teamData: TeamData = {
     {
       name: "Seah E-Ket",
       role: "Operation",
-      funFact: "Loves rock climbing"
+      funFact: "Frisbee enthusiast"
     },
     {
       name: "Jayden Tiew",
       image: "/lovable-uploads/45bfd287-2395-417f-8d7c-b52cb0add82e.png",
       role: "Operation",
       funFact: "Just another washed up programmer who loves problem solving, food, and of course, cpic!",
-      imagePosition: "center" // Updated to show full face
+      imagePosition: "center 40%"
     },
   ],
   media: [
@@ -82,7 +81,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Raphael Lim Fu En",
-      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png", // Changed to Truong's image
+      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
       role: "Trainer",
       funFact: "I missed gold by 1 point"
     },
@@ -93,7 +92,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Nguyen Dinh Anh",
-      image: "/lovable-uploads/e744596c-1de3-4ec3-9bc3-61bf1eee5b7a.png", // Swapped with Derrick's image
+      image: "/lovable-uploads/e744596c-1de3-4ec3-9bc3-61bf1eee5b7a.png",
       role: "Trainer",
       funFact: "I love taking long walks to the fridge",
       imagePosition: "center top"
@@ -126,10 +125,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Derrick Lukimin",
-      image: "/lovable-uploads/3069c6af-4890-4762-b797-21baa33b9733.png", // Swapped with Nguyen's image
+      image: "/lovable-uploads/3069c6af-4890-4762-b797-21baa33b9733.png",
       role: "Trainer",
       funFact: "My IOI selection rank was higher than my NOI rank this year which makes absolutely no sense",
-      imagePosition: "center" // Updated to show full face
+      imagePosition: "center"
     },
     {
       name: "William Edward Sugiharto",
@@ -140,7 +139,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Truong Le Huy",
-      image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png", // Changed to Arya's image
+      image: "/lovable-uploads/1aa2c46e-c227-487e-8106-ec64fa2227d9.png",
       role: "Trainer",
       funFact: "I once solved a Rubik's Cube in 6.65 seconds 👅👅👅",
       imagePosition: "center top"
@@ -154,7 +153,6 @@ export const teamData: TeamData = {
     },
     {
       name: "Bunnath Tith",
-      //image: "/lovable-uploads/78ace439-20dc-4ad9-b1fa-778036331a9b.png",
       role: "Trainer",
       funFact: "",
       imagePosition: "center"
