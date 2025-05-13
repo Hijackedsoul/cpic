@@ -1,3 +1,4 @@
+
 import Layout from '@/components/Layout';
 import TestimonialCard from '@/components/TestimonialCard';
 
@@ -150,7 +151,7 @@ const About = () => {
             </div>
 
             <div className="bg-black/40 border border-white/10 rounded-lg p-6 neo-blur">
-              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 4: Techniques</h3>
+              <h3 className="text-xl font-mono text-neon-cyan mb-4">Day 4: Classic Techniques</h3>
               <ul className="space-y-3 text-white/70">
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -162,7 +163,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Common competitive programming patterns</span>
+                  <span>Classic techniques</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
@@ -180,7 +181,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>
-                  <span>Morning contest with prizes</span>
+                  <span>Final contest with prizes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-magenta font-mono mr-2">→</span>

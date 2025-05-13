@@ -48,7 +48,7 @@ const Archives = () => {
                           <li>Intensive 4-day programming boot camp</li>
                           <li>120+ participants from 20+ different secondary schools and JCs</li>
                           <li>Final contest with prizes and certificates</li>
-                          <li>Special lecture by NOI 2024 Champion</li>
+                          <li>Guest appearance by NOI 2024 Champion</li>
                         </ul>
                       </div>
                     </div>
