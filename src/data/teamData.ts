@@ -70,7 +70,7 @@ export const teamData: TeamData = {
       name: "Nguyen Chi Ken",
       role: "Head of Media & Publicity",
       funFact: "Has a collection of vintage cameras"
-    }
+    },
     {
       name: "Nguyễn Quang Diệu"
       role: "Media & Publicity"
