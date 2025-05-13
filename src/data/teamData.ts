@@ -20,7 +20,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
       role: "Head Organiser",
       funFact: "part time human, full time compiler of shower thoughts",
-      imagePosition: "center 0%" // Shifted further up
+      imagePosition: "center 40%" // Shifted further up
     },
     {
       name: "Ryan Shaw",
