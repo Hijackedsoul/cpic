@@ -51,7 +51,7 @@ export const teamData: TeamData = {
       name: "Pannawit Supanwassa",
       image: "/lovable-uploads/5a40b946-98a1-495a-91ca-e0d0338143f6.png",
       role: "Head of Operation",
-      funFact: "A CP-enthusiastic monkey who founded CPIC but like to yap about quantum physics",
+      funFact: "Love to yap about quantum physics",
       imagePosition: "center top"
     },
     {
