@@ -45,7 +45,7 @@ export const teamData: TeamData = {
       name: "Edward Yee Mynn Sherng",
       image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", // Updated to new image
       role: "Outreach",
-      funFact: "Amateur astronomy enthusiast"
+      funFact: "Sleep"
     },
     {
       name: "Pannawit Supanwassa",
