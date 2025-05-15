@@ -36,11 +36,11 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-mono text-lg mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="mailto:cpic.sg@gmail.com" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
+              <a href="mailto:cpic.singapore@gmail.com" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
               </a>
-              <a href="https://www.instagram.com/cpic.sg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
+              <a href="https://www.instagram.com/cpic_sg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </a>
