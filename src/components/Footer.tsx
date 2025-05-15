@@ -1,9 +1,12 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, Discord } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
+import { icons } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer = () => {
+  const DiscordIcon = icons.MessageSquare;
+  
   return (
     <footer className="bg-black border-t border-white/10 py-8">
       <div className="container mx-auto px-4">
@@ -42,7 +45,7 @@ const Footer = () => {
                 <span className="sr-only">Instagram</span>
               </a>
               <a href="https://discord.gg/jnr3C5nmJD" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
-                <Discord size={20} />
+                <DiscordIcon size={20} />
                 <span className="sr-only">Discord</span>
               </a>
             </div>
