@@ -1,4 +1,3 @@
-
 export interface TeamMember {
   name: string;
   image?: string;
@@ -56,8 +55,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Seah E-Ket",
+      image: "/lovable-uploads/b32f8ec9-a71c-4589-ba00-756a2348ebf5.png",
       role: "Operation",
-      funFact: "Frisbee enthusiast"
+      funFact: "Frisbee enthusiast",
+      imagePosition: "center"
     },
     {
       name: "Jayden Tiew",
