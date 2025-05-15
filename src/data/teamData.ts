@@ -19,7 +19,7 @@ export const teamData: TeamData = {
       name: "Arya Ananda Putra",
       image: "/lovable-uploads/a2a89666-c8d8-460b-a3e3-d52a2547b764.png",
       role: "Head Organiser",
-      funFact: "Clippers, flippers, I eat snickers. Don't matter, Nuggets in 7",
+      funFact: "Clippers, flippers, I eat snickers. Nuggets in 7",
       imagePosition: "center 40%" // Shifted further up
     },
     {
