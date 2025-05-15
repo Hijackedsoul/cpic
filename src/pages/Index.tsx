@@ -84,7 +84,7 @@ const Index = () => {
             <FeatureCard 
               icon={<Users className="h-8 w-8 text-neon-magenta" />}
               title="Learn from Champions"
-              description="Our trainers are NOI/IOI winners with years of experience."
+              description="Our trainers are NOI medallists with years of experience."
             />
             <FeatureCard 
               icon={<Brain className="h-8 w-8 text-neon-cyan" />}
