@@ -36,14 +36,14 @@ export const teamData: TeamData = {
     },
     {
       name: "Francis Ang Zhao Xiong",
-      image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", // Updated to new image
+      image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", 
       role: "Head of Outreach",
       funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
       imagePosition: "center top"
     },
     {
       name: "Edward Yee Mynn Sherng",
-      image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", // Updated to new image
+      image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", 
       role: "Outreach",
       funFact: "Sleep"
     },
@@ -75,8 +75,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Nguyễn Quang Diệu",
+      image: "/lovable-uploads/c2e0e01d-5076-4179-81c2-106ae1df61a1.png",
       role: "Media & Publicity",
-      funFact: "Food and music makes me happy"
+      funFact: "Food and music makes me happy",
+      imagePosition: "center top"
     }
   ],
   trainers: [

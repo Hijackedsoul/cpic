@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MessageSquare, Twitter, Mail, Github } from 'lucide-react';
+import { Instagram, Mail, MessageCircle } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -33,21 +33,17 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-mono text-lg mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">
-                <MessageSquare size={20} />
-                <span className="sr-only">Discord</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">
-                <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">
-                <Github size={20} />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors">
+              <a href="mailto:cpic.sg@gmail.com" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
+              </a>
+              <a href="https://www.instagram.com/cpic.sg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
+                <Instagram size={20} />
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a href="https://discord.gg/cpic" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan transition-colors p-2 rounded-full hover:bg-white/5">
+                <MessageCircle size={20} />
+                <span className="sr-only">Discord</span>
               </a>
             </div>
           </div>
