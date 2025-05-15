@@ -63,7 +63,7 @@ export const teamData: TeamData = {
       name: "Jayden Tiew",
       image: "/lovable-uploads/45bfd287-2395-417f-8d7c-b52cb0add82e.png",
       role: "Operation",
-      funFact: "Just another washed up programmer who loves problem solving, food, and of course, cpic!",
+      funFact: "integers >> real numbers, also competitive programming >> school",
       imagePosition: "center 40%" // Shifted down
     },
   ],
