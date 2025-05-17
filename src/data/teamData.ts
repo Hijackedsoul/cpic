@@ -49,21 +49,21 @@ export const teamData: TeamData = {
     {
       name: "Pannawit Supanwassa",
       image: "/lovable-uploads/5a40b946-98a1-495a-91ca-e0d0338143f6.png",
-      role: "Head of Strategic Planning and Operation",
+      role: "Head of Strategy, Planning and Operation",
       funFact: "Love to yap about quantum physics",
       imagePosition: "center top"
     },
     {
       name: "Seah E-Ket",
       image: "/lovable-uploads/b32f8ec9-a71c-4589-ba00-756a2348ebf5.png",
-      role: "Strategic Planning and Operation",
+      role: "Strategy, Planning and Operation",
       funFact: "Frisbee enthusiast",
       imagePosition: "center"
     },
     {
       name: "Jayden Tiew",
       image: "/lovable-uploads/45bfd287-2395-417f-8d7c-b52cb0add82e.png",
-      role: "Strategic Planning and Operation",
+      role: "Strategy, Planning and Operation",
       funFact: "integers >> real numbers, also competitive programming >> school",
       imagePosition: "center 40%" // Shifted down
     },
