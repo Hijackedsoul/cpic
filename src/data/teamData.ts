@@ -34,19 +34,6 @@ export const teamData: TeamData = {
       //funFact: "I missed gold by 1 point"
     //},
     {
-      name: "Francis Ang Zhao Xiong",
-      image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", 
-      role: "Head of Outreach",
-      funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
-      imagePosition: "center top"
-    },
-    {
-      name: "Edward Yee Mynn Sherng",
-      image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", 
-      role: "Outreach",
-      funFact: "Sleep"
-    },
-    {
       name: "Pannawit Supanwassa",
       image: "/lovable-uploads/5a40b946-98a1-495a-91ca-e0d0338143f6.png",
       role: "Head of Strategy, Planning and Operation",
@@ -66,6 +53,19 @@ export const teamData: TeamData = {
       role: "Strategy, Planning and Operation",
       funFact: "integers >> real numbers, also competitive programming >> school",
       imagePosition: "center 40%" // Shifted down
+    },
+    {
+      name: "Francis Ang Zhao Xiong",
+      image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", 
+      role: "Head of Outreach",
+      funFact: "I figure out most of my solutions when I'm on the toiletbowl :3",
+      imagePosition: "center top"
+    },
+    {
+      name: "Edward Yee Mynn Sherng",
+      image: "/lovable-uploads/698aed07-51e8-4eff-a40e-f4b4c3678ee6.png", 
+      role: "Outreach",
+      funFact: "Sleep"
     },
   ],
   media: [
