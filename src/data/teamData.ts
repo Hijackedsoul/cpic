@@ -27,12 +27,12 @@ export const teamData: TeamData = {
       role: "Head of Training",
       funFact: "my mothertongue is c++"
     },
-    {
-      name: "Raphael Lim Fu En",
-      image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
-      role: "Training",
-      funFact: "I missed gold by 1 point"
-    },
+    //{
+      //name: "Raphael Lim Fu En",
+      //image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
+      //role: "Training",
+      //funFact: "I missed gold by 1 point"
+    //},
     {
       name: "Francis Ang Zhao Xiong",
       image: "/lovable-uploads/9a085198-d377-46f1-a07b-6e909dd44927.png", 
