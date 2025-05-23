@@ -22,7 +22,7 @@ const OurPartners = () => {
                   <Building className="h-8 w-8 text-neon-cyan" />
                 </div>
                 <div>
-                  <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence, National University of Singapore</CardTitle>
+                  <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence</CardTitle>
                   <CardDescription className="text-neon-magenta">Educational Partner</CardDescription>
                 </div>
               </div>
