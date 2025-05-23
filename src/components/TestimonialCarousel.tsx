@@ -12,36 +12,6 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah Chen",
-    role: "CS Undergraduate, NUS",
-    testimonial: "CPIC completely changed my approach to problem-solving. The trainers were incredibly knowledgeable and supportive.",
-    rating: 5
-  },
-  {
-    name: "Akash Patel",
-    role: "IOI Silver Medalist",
-    testimonial: "The course helped me improve my algorithmic thinking and coding skills. I went on to win a silver medal at IOI!",
-    rating: 5
-  },
-  {
-    name: "Li Wei",
-    role: "High School Student",
-    testimonial: "As a beginner, I was worried it would be too advanced, but the trainers made complex concepts easy to understand.",
-    rating: 4
-  },
-  {
-    name: "James Rodriguez",
-    role: "Software Engineering Intern",
-    testimonial: "The competitive programming skills I learned at CPIC helped me ace my technical interviews at top tech companies.",
-    rating: 5
-  },
-  {
-    name: "Mei Ling",
-    role: "Computing Student",
-    testimonial: "Great course structure and engaging instructors. I learned more in 5 days than I did in an entire semester.",
-    rating: 5
-  },
-  {
     name: "Tien Kai",
     role: "CPIC 2024 Participant",
     testimonial: "In the span of a short 4 days, CPIC helped me to gain my footing in competitive programming, and motivated me to explore more into this field. I gained many connections with trainers who were genuinely impressive and did not hesitate to answer my questions even after the course. Now I'm out here grinding for NOI and suffering... but like, in a good way.",
@@ -67,7 +37,7 @@ const TestimonialCarousel = () => {
       >
         <CarouselContent className="-ml-2 md:-ml-4">
           {testimonials.map((testimonial, index) => (
-            <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
               <div className="h-full">
                 <TestimonialCard
                   name={testimonial.name}
