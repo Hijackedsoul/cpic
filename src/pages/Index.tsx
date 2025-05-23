@@ -1,5 +1,4 @@
-
-import { ArrowRight, Code, Users, Database, Brain, Gift, Calendar, Clock, MapPin, Award, Target } from 'lucide-react';
+import { ArrowRight, Code, Users, Database, Brain, Gift, Calendar, Clock, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import TypewriterText from '@/components/TypewriterText';
@@ -10,7 +9,6 @@ import { motion } from 'framer-motion';
 import ParticleBackground from '@/components/ParticleBackground';
 import FloatingCodeSnippets from '@/components/FloatingCodeSnippets';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import AnimatedStats from '@/components/AnimatedStats';
 import InteractiveFeatureCard from '@/components/InteractiveFeatureCard';
 
 const Index = () => {
@@ -193,30 +191,6 @@ const Index = () => {
               </a>
             </motion.div>
           </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-[#080808] relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,255,255,0.05)_0,rgba(0,0,0,0)_70%)]"></div>
-        </div>
-        
-        <motion.div 
-          className="container mx-auto px-4 z-10 relative"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={containerVariants}
-        >
-          <motion.h2 
-            className="text-3xl font-bold text-center text-white mb-12"
-            variants={itemVariants}
-          >
-            CPIC <span className="text-neon-magenta">Impact</span>
-          </motion.h2>
-          
-          <AnimatedStats />
         </motion.div>
       </section>
 

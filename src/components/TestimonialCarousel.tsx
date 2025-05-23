@@ -40,6 +40,18 @@ const testimonials: Testimonial[] = [
     role: "Computing Student",
     testimonial: "Great course structure and engaging instructors. I learned more in 5 days than I did in an entire semester.",
     rating: 5
+  },
+  {
+    name: "Tien Kai",
+    role: "CPIC 2024 Participant",
+    testimonial: "In the span of a short 4 days, CPIC helped me to gain my footing in competitive programming, and motivated me to explore more into this field. I gained many connections with trainers who were genuinely impressive and did not hesitate to answer my questions even after the course. Now I'm out here grinding for NOI and suffering... but like, in a good way.",
+    rating: 5
+  },
+  {
+    name: "Prudent",
+    role: "CPIC 2024 Participant",
+    testimonial: "I joined CPIC knowing almost nothing about competitive programming—just vibes and curiosity. But thanks to the amazing mentors and structured lessons, I actually understood things (crazy, I know). Fast forward: I've won medals at NOI and a bunch of other CP contests. CPIC really gave me the push I didn't know I needed.",
+    rating: 5
   }
 ];
 
