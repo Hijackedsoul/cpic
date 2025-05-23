@@ -1,10 +1,10 @@
-
-import { ArrowRight, Code, Users, Database, Brain, Gift } from 'lucide-react';
+import { ArrowRight, Code, Users, Database, Brain, Gift, Calendar, Clock, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import TypewriterText from '@/components/TypewriterText';
 import CountdownTimer from '@/components/CountdownTimer';
 import { Link } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Index = () => {
   // Set the countdown date to June 16, 2025
@@ -64,6 +64,45 @@ const Index = () => {
               <p className="text-white/70 mb-4 font-mono">Next Course Begins In:</p>
               <CountdownTimer targetDate={countdownDate} />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Details Section */}
+      <section className="py-16 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.1)_0,rgba(0,0,0,0)_70%)]"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 z-10 relative">
+          <h2 className="text-3xl font-bold text-center text-white mb-12">
+            Event <span className="text-neon-cyan">Details</span>
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <EventCard 
+              icon={<Calendar className="h-8 w-8 text-neon-cyan" />}
+              title="Dates"
+              details={["June 16-20, 2025", "5 full days of intensive training"]}
+            />
+            <EventCard 
+              icon={<Clock className="h-8 w-8 text-neon-magenta" />}
+              title="Timings"
+              details={["9:00 AM - 5:00 PM daily", "Registration opens at 8:30 AM"]}
+            />
+            <EventCard 
+              icon={<MapPin className="h-8 w-8 text-neon-cyan" />}
+              title="Venue"
+              details={["Nanyang Junior College", "128 Serangoon Ave 3, Singapore 556111"]}
+            />
+          </div>
+          
+          <div className="text-center mt-10">
+            <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+              <Button className="bg-neon-magenta hover:bg-neon-magenta/80 text-white px-6 py-6 font-mono text-lg">
+                Register Now <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -143,6 +182,32 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
         {description}
       </p>
     </div>
+  );
+};
+
+interface EventCardProps {
+  icon: React.ReactNode;
+  title: string;
+  details: string[];
+}
+
+const EventCard = ({ icon, title, details }: EventCardProps) => {
+  return (
+    <Card className="border border-white/10 bg-black/50 hover:border-neon-cyan/50 transition-colors group">
+      <CardContent className="p-6">
+        <div className="mb-4">{icon}</div>
+        <h3 className="text-xl font-bold mb-3 text-white group-hover:text-neon-cyan transition-colors font-mono">
+          {title}
+        </h3>
+        <div className="space-y-2">
+          {details.map((detail, index) => (
+            <p key={index} className="text-gray-300">
+              {detail}
+            </p>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 
