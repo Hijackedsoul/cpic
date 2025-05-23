@@ -50,7 +50,7 @@ const EventDetailsSection = ({ registrationLink }: EventDetailsSectionProps) => 
             <EventCard 
               icon={<Calendar className="h-8 w-8 text-neon-cyan" />}
               title="Dates"
-              details={["June 16-20, 2025", "5 full days of intensive training"]}
+              details={["June 16-20, 2025", "5 days of fun and engaging experience"]}
             />
           </motion.div>
           <motion.div variants={itemVariants}>
