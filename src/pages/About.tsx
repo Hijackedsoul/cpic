@@ -1,7 +1,7 @@
 
 import Layout from '@/components/Layout';
 import { motion } from 'framer-motion';
-import { ChevronRight, Code, Users, Brain, Award } from 'lucide-react';
+import { ChevronRight, Code, Users, Brain } from 'lucide-react';
 
 const About = () => {
   const containerVariants = {
@@ -357,66 +357,6 @@ const About = () => {
               </p>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Impact section (new) */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <motion.h2 
-            className="text-3xl font-bold text-white mb-12 text-center"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Our <span className="text-neon-cyan">Impact</span>
-          </motion.h2>
-
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={containerVariants}
-          >
-            <motion.div variants={itemVariants}>
-              <div className="text-neon-cyan text-4xl font-bold mb-2">500+</div>
-              <div className="text-white font-mono">Students Trained</div>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-              <div className="text-neon-magenta text-4xl font-bold mb-2">80%</div>
-              <div className="text-white font-mono">Continued in CP</div>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-              <div className="text-neon-cyan text-4xl font-bold mb-2">50+</div>
-              <div className="text-white font-mono">NOI Medals Won</div>
-            </motion.div>
-          </motion.div>
-
-          <motion.div 
-            className="mt-16 p-8 border border-white/10 rounded-lg bg-black/50 hover:border-neon-cyan/30 transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            whileHover={{ 
-              boxShadow: "0 0 25px rgba(0, 255, 255, 0.15)",
-            }}
-          >
-            <div className="flex items-start">
-              <Award className="text-neon-cyan mr-4 h-12 w-12 flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4">Recognition</h3>
-                <p className="text-gray-300 mb-4">
-                  CPIC has been recognized as a leading initiative in competitive programming education in Singapore. Our alumni have gone on to represent Singapore in international competitions, secure positions at top tech companies, and even return as trainers for future CPIC cohorts.
-                </p>
-                <p className="text-gray-300">
-                  We're proud to have played a part in nurturing the next generation of computer scientists and software engineers who will drive technological innovation in Singapore and beyond.
-                </p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
     </Layout>
