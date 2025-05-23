@@ -57,7 +57,7 @@ const EventDetailsSection = ({ registrationLink }: EventDetailsSectionProps) => 
             <EventCard 
               icon={<Clock className="h-8 w-8 text-neon-magenta" />}
               title="Timings"
-              details={["9:00 AM - 5:00 PM daily", "Registration opens at 8:30 AM"]}
+              details={["9:00 AM - 5:00 PM daily", "Registration starts at 8:30 AM"]}
             />
           </motion.div>
           <motion.div variants={itemVariants}>
