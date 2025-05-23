@@ -38,7 +38,7 @@ const TestimonialCarousel = () => {
         <CarouselContent className="-ml-2 md:-ml-4">
           {testimonials.map((testimonial, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
-              <div className="h-full">
+              <div className="h-full min-h-[280px]">
                 <TestimonialCard
                   name={testimonial.name}
                   role={testimonial.role}
