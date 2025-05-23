@@ -1,3 +1,4 @@
+
 import { ArrowRight, Code, Users, Database, Brain, Gift, Calendar, Clock, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
@@ -93,7 +94,7 @@ const Index = () => {
             <EventCard 
               icon={<MapPin className="h-8 w-8 text-neon-cyan" />}
               title="Venue"
-              details={["Nanyang Junior College", "128 Serangoon Ave 3, Singapore 556111"]}
+              details={["NUS, School of Computing", "COM 1 Building, Singapore 117417"]}
             />
           </div>
           
