@@ -22,13 +22,13 @@ const OurPartners = () => {
                   <Building className="h-8 w-8 text-neon-cyan" />
                 </div>
                 <div>
-                  <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence</CardTitle>
-                  <CardDescription className="text-neon-magenta">Logistics Partner</CardDescription>
+                  <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence, National University of Singapore</CardTitle>
+                  <CardDescription className="text-neon-magenta">Educational Partner</CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent className="pt-6">
-              <p className="text-gray-400 mb-4">The Centre for Nurturing Computing Excellence (CenCE) collaborates with us to provide an conducive environment for our competitive programming course. </p>
+              <p className="text-gray-400 mb-4">The Centre for Nurturing Computing Excellence (CenCE) run by NUS School of Computing collaborates with us to provide an conducive environment for our competitive programming course. </p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
                 <a href="https://cence.comp.nus.edu.sg/cence/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
