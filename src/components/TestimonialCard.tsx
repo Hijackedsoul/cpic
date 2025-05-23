@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ name, role, testimonial, rating }: TestimonialCardProps) => {
   return (
     <div className="p-6 pt-10 rounded-lg bg-black/50 border border-white/10 backdrop-blur-sm relative h-full">
-      <div className="absolute -top-4 right-4 flex p-1 bg-black/70 rounded-md">
+      <div className="absolute -top-10 right-4 flex p-1 bg-black/70 rounded-md">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star 
             key={i}
