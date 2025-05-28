@@ -19,7 +19,7 @@ const OurPartners = () => {
             <CardHeader className="pb-0">
               <div className="flex items-center gap-4">
                 <div className="bg-white/5 p-3 rounded-lg">
-                  <Company className="h-8 w-8 text-neon-cyan" />
+                  <Building className="h-8 w-8 text-neon-cyan" />
                 </div>
                 <div>
                   <CardTitle className="text-white text-xl font-mono">Hudson River Trading</CardTitle>
