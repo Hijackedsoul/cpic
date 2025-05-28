@@ -28,7 +28,7 @@ const OurPartners = () => {
               </div>
             </CardHeader>
             <CardContent className="pt-6">
-              <p className="text-gray-400 mb-4"> Hudson River Trading (HRT) funds us.  </p>
+              <p className="text-gray-400 mb-4"> Hudson River Trading (HRT) plays a key role in enhancing liquidity of financial markets through advanced algorithmic trading. HRT enriches the CPIC learning experience by providing essential logistical funding and offering valuable insights into the financial technology and trading industry.  </p>
               <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
                 <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer" className="flex w-full">
                   Visit Website
