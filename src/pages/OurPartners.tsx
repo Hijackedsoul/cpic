@@ -14,6 +14,28 @@ const OurPartners = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* HRT Partner Card */}
+          <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
+            <CardHeader className="pb-0">
+              <div className="flex items-center gap-4">
+                <div className="bg-white/5 p-3 rounded-lg">
+                  <Building className="h-8 w-8 text-neon-cyan" />
+                </div>
+                <div>
+                  <CardTitle className="text-white text-xl font-mono">Hudson River Trading</CardTitle>
+                  <CardDescription className="text-neon-magenta">Exclusive Sponsorship Partner</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <p className="text-gray-400 mb-4"> Hudson River Trading (HRT) funds us.  </p>
+              <Button variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black">
+                <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer" className="flex w-full">
+                  Visit Website
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
           {/* CenCE Partner Card */}
           <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
             <CardHeader className="pb-0">
