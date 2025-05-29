@@ -151,7 +151,7 @@ const Contact = () => {
                   Will meals be provided?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-400">
-                  Yes, we will be catering lunches from an external party.
+                  Yes, meals will be provided on Day 1 and Day 5. For Days 2-4, please bring money to buy food from the NUS canteen.
                 </AccordionContent>
               </AccordionItem>
               
@@ -174,15 +174,6 @@ const Contact = () => {
               </AccordionItem>
               
               <AccordionItem value="item-6" className="border border-white/10 bg-black/50 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 font-mono font-bold text-white hover:text-neon-cyan">
-                  How will classes be conducted, and what support will students receive?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-400">
-                  Students will be divided into classes of around 30, with one to two student trainers per class. A central lecture will be live-streamed to all classes, and your trainers will be present in person to guide you through both the lectures and practice tasks.
-                </AccordionContent>
-              </AccordionItem>
-              
-              <AccordionItem value="item-7" className="border border-white/10 bg-black/50 rounded-lg overflow-hidden">
                 <AccordionTrigger className="px-6 py-4 font-mono font-bold text-white hover:text-neon-cyan">
                   Who are the trainers?
                 </AccordionTrigger>
