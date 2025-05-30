@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@/components/Layout';
-import { AtSign, MessageCircle, Instagram, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import ContactForm from '@/components/ContactForm';
+import { AtSign, MessageCircle, Instagram } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const mailtoLink = `mailto:cpic.singapore@gmail.com?subject=CPIC%202025%3A%20${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}%0A%0ARegards%2C%20%0A${encodeURIComponent(name)}%0AEmail%20%3A%20${encodeURIComponent(email)}`;
-    window.location.href = mailtoLink;
-  };
-
   return <Layout>
       {/* Hero section */}
       <section className="py-20 bg-black relative overflow-hidden">
@@ -45,48 +31,7 @@ const Contact = () => {
             {/* Contact form */}
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div>
-                  <Input 
-                    placeholder="Your Name" 
-                    className="bg-black/40 border-white/10 text-white" 
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input 
-                    type="email" 
-                    placeholder="Your Email" 
-                    className="bg-black/40 border-white/10 text-white" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input 
-                    placeholder="Subject" 
-                    className="bg-black/40 border-white/10 text-white" 
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea 
-                    placeholder="Your Message" 
-                    className="min-h-32 bg-black/40 border-white/10 text-white" 
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    required
-                  />
-                </div>
-                <Button type="submit" className="bg-neon-cyan text-black hover:bg-neon-cyan/80">
-                  Send Message
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Contact info */}
@@ -106,10 +51,22 @@ const Contact = () => {
                 <div>
                   <h3 className="text-white font-mono font-bold mb-3">Social Media</h3>
                   <div className="flex space-x-4">
-                    <a href="https://www.instagram.com/cpic_sg/" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
+                    <a 
+                      href="https://www.instagram.com/cpic_sg/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all"
+                      aria-label="Follow CPIC on Instagram"
+                    >
                       <Instagram className="h-5 w-5 text-neon-cyan" />
                     </a>
-                    <a href="https://discord.gg/zkaTT54dUm" target="_blank" rel="noopener noreferrer" className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all">
+                    <a 
+                      href="https://discord.gg/zkaTT54dUm" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-black/40 border border-white/10 p-3 rounded-lg hover:border-neon-cyan transition-all"
+                      aria-label="Join CPIC Discord"
+                    >
                       <MessageCircle className="h-5 w-5 text-neon-cyan" />
                     </a>
                   </div>
@@ -187,4 +144,5 @@ const Contact = () => {
       </section>
     </Layout>;
 };
+
 export default Contact;
