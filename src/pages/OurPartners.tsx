@@ -25,7 +25,7 @@ const OurPartners = () => {
                       <img 
                         src="/lovable-uploads/c23d86d0-e145-49c1-a59a-d4230db5117b.png" 
                         alt="Hudson River Trading Logo" 
-                        className="h-16 w-16 object-contain"
+                        className="h-10 w-10 object-contain"
                       />
                     </div>
                     <div>
