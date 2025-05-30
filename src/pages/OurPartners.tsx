@@ -2,7 +2,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const OurPartners = () => {
@@ -57,7 +56,11 @@ const OurPartners = () => {
               <CardHeader className="pb-0">
                 <div className="flex items-center gap-4">
                   <div className="bg-white/5 p-3 rounded-lg">
-                    <School className="h-8 w-8 text-neon-cyan" />
+                    <img 
+                      src="/lovable-uploads/c84135c4-9411-49f9-b9d5-cbc51a51042c.png" 
+                      alt="CenCE Logo" 
+                      className="h-8 w-8 object-contain"
+                    />
                   </div>
                   <div>
                     <CardTitle className="text-white text-xl font-mono">Centre for Nurturing Computing Excellence</CardTitle>
@@ -80,7 +83,11 @@ const OurPartners = () => {
               <CardHeader className="pb-0">
                 <div className="flex items-center gap-4">
                   <div className="bg-white/5 p-3 rounded-lg">
-                    <School className="h-8 w-8 text-neon-cyan" />
+                    <img 
+                      src="/lovable-uploads/064a919c-4b8b-42c3-96b3-88ee0cec4801.png" 
+                      alt="Nanyang Junior College Logo" 
+                      className="h-8 w-8 object-contain"
+                    />
                   </div>
                   <div>
                     <CardTitle className="text-white text-xl font-mono">Nanyang Junior College</CardTitle>
