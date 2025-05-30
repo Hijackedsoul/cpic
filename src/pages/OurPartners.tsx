@@ -59,7 +59,7 @@ const OurPartners = () => {
                     <img 
                       src="/lovable-uploads/c84135c4-9411-49f9-b9d5-cbc51a51042c.png" 
                       alt="CenCE Logo" 
-                      className="h-8 w-8 object-contain"
+                      className="h-12 w-12 object-contain"
                     />
                   </div>
                   <div>
@@ -86,7 +86,7 @@ const OurPartners = () => {
                     <img 
                       src="/lovable-uploads/064a919c-4b8b-42c3-96b3-88ee0cec4801.png" 
                       alt="Nanyang Junior College Logo" 
-                      className="h-8 w-8 object-contain"
+                      className="h-12 w-12 object-contain"
                     />
                   </div>
                   <div>
