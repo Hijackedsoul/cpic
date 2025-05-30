@@ -55,7 +55,6 @@ const OurPartners = () => {
             <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
               <CardHeader className="pb-0">
                 <div className="flex items-center gap-4">
-                  <div className="flex items-center gap-4">
                   <div className="bg-white h-16 w-16 rounded-lg overflow-hidden">
                     <img 
                       src="/lovable-uploads/c84135c4-9411-49f9-b9d5-cbc51a51042c.png" 
