@@ -59,7 +59,7 @@ const OurPartners = () => {
                     <img 
                       src="/lovable-uploads/c84135c4-9411-49f9-b9d5-cbc51a51042c.png" 
                       alt="CenCE Logo" 
-                      className="h-full w-full object-cover scale-25" 
+                      className="h-full w-full object-cover scale-15" 
                     />
                   </div>
                   <div>
