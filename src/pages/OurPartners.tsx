@@ -1,30 +1,37 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Building, School } from 'lucide-react';
+import { School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const OurPartners = () => {
-  return <Layout>
+  return (
+    <Layout>
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4">Our <span className="text-neon-cyan">Partners</span></h1>
           <p className="text-gray-400 max-w-2xl mx-auto">We collaborate with leading corporates and educational institutions to bring you the best competitive programming course!</p>
         </div>
 
-        {/* Sponsorship Partner Section */}
+        {/* Financial Sponsor Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold font-mono text-white mb-8 text-center">Sponsorship <span className="text-neon-cyan">Partner</span></h2>
+          <h2 className="text-3xl font-bold font-mono text-white mb-8 text-center">Financial <span className="text-neon-cyan">Sponsor</span></h2>
           <div className="flex justify-center">
             <div className="max-w-md w-full">
               <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
                 <CardHeader className="pb-0">
                   <div className="flex items-center gap-4">
                     <div className="bg-white/5 p-3 rounded-lg">
-                      <Building className="h-8 w-8 text-neon-cyan" />
+                      <img 
+                        src="/lovable-uploads/c23d86d0-e145-49c1-a59a-d4230db5117b.png" 
+                        alt="Hudson River Trading Logo" 
+                        className="h-8 w-8 object-contain"
+                      />
                     </div>
                     <div>
                       <CardTitle className="text-white text-xl font-mono">Hudson River Trading</CardTitle>
-                      <CardDescription className="text-neon-magenta">Exclusive Sponsorship Partner</CardDescription>
+                      <CardDescription className="text-neon-magenta">Exclusive Financial Sponsor</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -41,9 +48,9 @@ const OurPartners = () => {
           </div>
         </div>
 
-        {/* Education Partners Section */}
+        {/* Educational Partners Section */}
         <div>
-          <h2 className="text-3xl font-bold font-mono text-white mb-8 text-center">Education <span className="text-neon-cyan">Partners</span></h2>
+          <h2 className="text-3xl font-bold font-mono text-white mb-8 text-center">Educational <span className="text-neon-cyan">Partners</span></h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* CenCE Partner Card */}
             <Card className="bg-black/50 border border-white/10 overflow-hidden hover:border-neon-cyan transition-all duration-300">
@@ -88,11 +95,13 @@ const OurPartners = () => {
                     Visit Website
                   </a>
                 </Button>
-              </CardContent>
+                </CardContent>
             </Card>
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default OurPartners;
