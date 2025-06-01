@@ -75,7 +75,7 @@ export const teamData: TeamData = {
       funFact: "Has a collection of vintage cameras"
     },
     {
-      name: "Nguyễn Quang Diệu",
+      name: "Frank",
       image: "/lovable-uploads/c2e0e01d-5076-4179-81c2-106ae1df61a1.png",
       role: "Media & Publicity",
       funFact: "Food and music makes me happy",
@@ -128,7 +128,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/521f5cb0-fc9b-4100-be74-5aa7914f58aa.png",
       role: "Trainer",
       funFact: "Eket cant be this cute.",
-      imagePosition: "center"
+      imagePosition: "center 40%"
     },
     {
       name: "Andreas Surya Tanjung",
@@ -176,7 +176,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/93a4c3be-8a18-4cb1-a0c0-e52035188036.png",
       role: "Trainer",
       funFact: "math",
-      imagePosition: "center"
+      imagePosition: "center 40%"
     },
   ],
 };
