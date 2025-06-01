@@ -1,3 +1,4 @@
+
 export interface TeamMember {
   name: string;
   image?: string;
@@ -123,8 +124,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Gao Zhaoyi",
+      image: "/lovable-uploads/521f5cb0-fc9b-4100-be74-5aa7914f58aa.png",
       role: "Trainer",
-      funFact: "Eket cant be this cute."
+      funFact: "Eket cant be this cute.",
+      imagePosition: "center"
     },
     {
       name: "Andreas Surya Tanjung",
@@ -168,9 +171,17 @@ export const teamData: TeamData = {
       imagePosition: "center"
     },
     {
-      name: "Tung Jia Ray", // Added new team member
+      name: "Tung Jia Ray",
+      image: "/lovable-uploads/93a4c3be-8a18-4cb1-a0c0-e52035188036.png",
       role: "Trainer",
       funFact: "math",
+      imagePosition: "center"
+    },
+    {
+      name: "Zane",
+      image: "/lovable-uploads/88c58101-2c5c-4462-b752-be891990c309.png",
+      role: "Trainer",
+      funFact: "Always smiling",
       imagePosition: "center"
     },
   ],
