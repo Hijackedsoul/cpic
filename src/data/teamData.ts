@@ -1,4 +1,3 @@
-
 export interface TeamMember {
   name: string;
   image?: string;
@@ -98,8 +97,10 @@ export const teamData: TeamData = {
     },
     {
       name: "Yu Zheyuan",
+      image: "/lovable-uploads/88c58101-2c5c-4462-b752-be891990c309.png",
       role: "Trainer",
-      funFact: "skibidi toilet"
+      funFact: "skibidi toilet",
+      imagePosition: "center"
     },
     {
       name: "Nguyen Dinh Anh",
@@ -175,13 +176,6 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/93a4c3be-8a18-4cb1-a0c0-e52035188036.png",
       role: "Trainer",
       funFact: "math",
-      imagePosition: "center"
-    },
-    {
-      name: "Zane",
-      image: "/lovable-uploads/88c58101-2c5c-4462-b752-be891990c309.png",
-      role: "Trainer",
-      funFact: "Always smiling",
       imagePosition: "center"
     },
   ],
