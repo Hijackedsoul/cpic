@@ -176,7 +176,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/93a4c3be-8a18-4cb1-a0c0-e52035188036.png",
       role: "Trainer",
       funFact: "math",
-      imagePosition: "center 40%"
+      imagePosition: "center top"
     },
   ],
 };
