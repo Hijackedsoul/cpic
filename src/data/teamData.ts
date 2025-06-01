@@ -128,7 +128,7 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/521f5cb0-fc9b-4100-be74-5aa7914f58aa.png",
       role: "Trainer",
       funFact: "Eket cant be this cute.",
-      imagePosition: "center 40%"
+      imagePosition: "center top"
     },
     {
       name: "Andreas Surya Tanjung",
