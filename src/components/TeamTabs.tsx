@@ -22,16 +22,6 @@ const TeamTabs = ({ currentTab, onTabChange }: TeamTabsProps) => {
         </div>
       </TabsTrigger>
       <TabsTrigger 
-        value="media" 
-        onClick={() => onTabChange("media")} 
-        className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black"
-      >
-        <div className="flex items-center gap-1 sm:gap-2 justify-center">
-          <Camera size={16} />
-          <span className="text-xs sm:text-base">Media</span>
-        </div>
-      </TabsTrigger>
-      <TabsTrigger 
         value="trainers" 
         onClick={() => onTabChange("trainers")} 
         className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black"
@@ -39,6 +29,16 @@ const TeamTabs = ({ currentTab, onTabChange }: TeamTabsProps) => {
         <div className="flex items-center gap-1 sm:gap-2 justify-center">
           <Users size={16} />
           <span className="text-xs sm:text-base">Trainers</span>
+        </div>
+      </TabsTrigger>
+      <TabsTrigger 
+        value="media" 
+        onClick={() => onTabChange("media")} 
+        className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black"
+      >
+        <div className="flex items-center gap-1 sm:gap-2 justify-center">
+          <Camera size={16} />
+          <span className="text-xs sm:text-base">Media</span>
         </div>
       </TabsTrigger>
     </TabsList>

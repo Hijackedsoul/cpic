@@ -28,13 +28,9 @@ const OurTeam = () => {
         <Tabs value={currentTab} onValueChange={handleTabChange} className="w-full max-w-4xl mx-auto">
           <TeamTabs currentTab={currentTab} onTabChange={handleTabChange} />
           
-          {Object.entries(teamData).map(([category, members]) => (
-            <TeamTabContent 
-              key={category} 
-              category={category} 
-              members={members} 
-            />
-          ))}
+          <TeamTabContent category="organisers" members={teamData.organisers} />
+          <TeamTabContent category="trainers" members={teamData.trainers} />
+          <TeamTabContent category="media" members={teamData.media} />
         </Tabs>
       </div>
     </Layout>

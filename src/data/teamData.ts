@@ -72,8 +72,10 @@ export const teamData: TeamData = {
   media: [
     {
       name: "Nguyen Chi Ken",
+      image: "/lovable-uploads/a5dfb5c3-8ee5-4b63-9fa7-c03e1a88c487.png",
       role: "Head of Media & Publicity",
-      funFact: "Has a collection of vintage cameras"
+      funFact: "Has a collection of vintage cameras",
+      imagePosition: "center"
     },
     {
       name: "Frank",
