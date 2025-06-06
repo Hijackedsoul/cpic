@@ -169,8 +169,9 @@ export const teamData: TeamData = {
     },
     {
       name: "Bunnath Tith",
+      image: "/lovable-uploads/2b0f63e7-a878-4db2-8fb6-58df0d852c99.png",
       role: "Trainer",
-      funFact: "",
+      funFact: "My first programming language is arduino",
       imagePosition: "center"
     },
     {
