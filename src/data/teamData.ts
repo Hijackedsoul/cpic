@@ -1,3 +1,4 @@
+
 export interface TeamMember {
   name: string;
   image?: string;
@@ -177,6 +178,13 @@ export const teamData: TeamData = {
       role: "Trainer",
       funFact: "math",
       imagePosition: "center top"
+    },
+    {
+      name: "Ng Yan Xi Jericho",
+      image: "/lovable-uploads/887b4f82-df92-41b5-b25c-50efe6be2bf0.png",
+      role: "Trainer",
+      funFact: "I love cp ❤",
+      imagePosition: "center"
     },
   ],
 };
