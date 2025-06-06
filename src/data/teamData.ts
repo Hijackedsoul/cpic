@@ -1,4 +1,3 @@
-
 export interface TeamMember {
   name: string;
   image?: string;
@@ -186,6 +185,13 @@ export const teamData: TeamData = {
       image: "/lovable-uploads/887b4f82-df92-41b5-b25c-50efe6be2bf0.png",
       role: "Trainer",
       funFact: "I love cp ❤",
+      imagePosition: "center"
+    },
+    {
+      name: "Gibson Bong Hoong Nien",
+      image: "/lovable-uploads/6b0f593e-c780-477b-ab58-41b5af0cda96.png",
+      role: "Trainer",
+      funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds.",
       imagePosition: "center"
     },
   ],
