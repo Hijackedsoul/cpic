@@ -191,7 +191,7 @@ export const teamData: TeamData = {
       name: "Gibson Bong Hoong Nien",
       image: "/lovable-uploads/6b0f593e-c780-477b-ab58-41b5af0cda96.png",
       role: "Trainer",
-      funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more"
+      funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more",
       imagePosition: "center"
     },
   ],
