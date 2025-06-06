@@ -169,9 +169,8 @@ export const teamData: TeamData = {
     },
     {
       name: "Bunnath Tith",
-      image: "/lovable-uploads/2b0f63e7-a878-4db2-8fb6-58df0d852c99.png",
       role: "Trainer",
-      funFact: "My first programming language is arduino",
+      funFact: "",
       imagePosition: "center"
     },
     {
@@ -192,7 +191,7 @@ export const teamData: TeamData = {
       name: "Gibson Bong Hoong Nien",
       image: "/lovable-uploads/6b0f593e-c780-477b-ab58-41b5af0cda96.png",
       role: "Trainer",
-      funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds.",
+      funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more"
       imagePosition: "center"
     },
   ],
