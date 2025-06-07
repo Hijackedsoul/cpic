@@ -10,7 +10,6 @@ export interface TeamData {
   organisers: TeamMember[];
   media: TeamMember[];
   trainers: TeamMember[];
-  helpers: TeamMember[];
 }
 
 export const teamData: TeamData = {
@@ -170,6 +169,7 @@ export const teamData: TeamData = {
     },
     {
       name: "Bunnath Tith",
+      image: "/lovable-uploads/f635d1f2-5d1e-4fdc-b3ce-e7748174136e.png",
       role: "Trainer",
       funFact: "",
       imagePosition: "center"
@@ -206,10 +206,8 @@ export const teamData: TeamData = {
       name: "Yong Teck",
       image: "/lovable-uploads/34369b24-d18b-4ba9-a247-d7100fa2f087.png",
       role: "Trainer",
-      funFact: "Ready to help students excel in competitive programming",
+      funFact: "Coming soon",
       imagePosition: "center"
     }
-  ],
-  helpers: [
   ],
 };

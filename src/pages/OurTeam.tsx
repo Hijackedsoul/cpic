@@ -31,7 +31,6 @@ const OurTeam = () => {
           <TeamTabContent category="organisers" members={teamData.organisers} />
           <TeamTabContent category="trainers" members={teamData.trainers} />
           <TeamTabContent category="media" members={teamData.media} />
-          <TeamTabContent category="helpers" members={teamData.helpers} />
         </Tabs>
       </div>
     </Layout>
