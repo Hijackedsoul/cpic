@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Briefcase, Camera, Users } from 'lucide-react';
+import { Briefcase, Camera, Users, wrench } from 'lucide-react';
 
 interface TeamTabsProps {
   currentTab: string;
@@ -10,7 +10,7 @@ interface TeamTabsProps {
 
 const TeamTabs = ({ currentTab, onTabChange }: TeamTabsProps) => {
   return (
-    <TabsList className="grid w-full grid-cols-3 sm:grid-cols-3 bg-black/50 border border-white/10 p-1 mb-8">
+    <TabsList className="grid w-full grid-cols-4 sm:grid-cols-4 bg-black/50 border border-white/10 p-1 mb-8">
       <TabsTrigger 
         value="organisers" 
         onClick={() => onTabChange("organisers")} 
@@ -39,6 +39,16 @@ const TeamTabs = ({ currentTab, onTabChange }: TeamTabsProps) => {
         <div className="flex items-center gap-1 sm:gap-2 justify-center">
           <Camera size={16} />
           <span className="text-xs sm:text-base">Media</span>
+        </div>
+      </TabsTrigger>
+      <TabsTrigger 
+        value="helpers" 
+        onClick={() => onTabChange("helpers")} 
+        className="data-[state=active]:bg-neon-cyan data-[state=active]:text-black"
+      >
+        <div className="flex items-center gap-1 sm:gap-2 justify-center">
+          <wrench size={16} />
+          <span className="text-xs sm:text-base">Helpers</span>
         </div>
       </TabsTrigger>
     </TabsList>
