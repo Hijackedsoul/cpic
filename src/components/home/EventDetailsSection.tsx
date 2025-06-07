@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
@@ -70,16 +69,9 @@ const EventDetailsSection = ({ registrationLink }: EventDetailsSectionProps) => 
         </div>
         
         <motion.div 
-          className="text-center mt-10 space-y-4"
+          className="text-center mt-10"
           variants={itemVariants}
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <a href={registrationLink} target="_blank" rel="noopener noreferrer">
-              <Button className="bg-neon-magenta hover:bg-neon-magenta/80 text-white px-6 py-6 font-mono text-lg shadow-[0_0_15px_rgba(255,0,255,0.3)] mr-4">
-                Register Now <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </a>
-          </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a href="/schedule">
               <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black px-6 py-6 font-mono text-lg shadow-[0_0_15px_rgba(0,255,255,0.3)]">
