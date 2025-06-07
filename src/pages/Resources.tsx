@@ -6,7 +6,7 @@ const Resources = () => {
   const driveUrl = "https://drive.google.com/drive/folders/1d5V-YF3DHq9VejAElIycts5PAUxnykLP";
 
   useEffect(() => {
-    // Redirect to Google Drive folder
+    // Immediate redirect to Google Drive folder
     window.location.href = driveUrl;
   }, []);
 
