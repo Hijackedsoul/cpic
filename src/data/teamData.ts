@@ -206,7 +206,7 @@ export const teamData: TeamData = {
       name: "Yong Teck",
       image: "/lovable-uploads/34369b24-d18b-4ba9-a247-d7100fa2f087.png",
       role: "Trainer",
-      funFact: "Coming soon",
+      funFact: "i like ramen😋",
       imagePosition: "center"
     }
   ],
