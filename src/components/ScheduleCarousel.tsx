@@ -39,13 +39,13 @@ const scheduleData: ScheduleDay[] = [
         time: "09:55 - 12:00",
         venue: "LT 15",
         activity: "Games / Bonding / Ice-breakers",
-        remarks: "Participants will be split into OGs across LT15 and PL1-6. Trainers and crew will be facilitators. Tentative: Games will be on a CTF-like platform, where participants will complete missions, some will be CP-related as well to introduce them to CP. Objective is for participants to bond and get to know each other better"
+        remarks: "Participants will be split into OGs across LT15 and PL1-6. Trainers and crew will be facilitators. Games will be on a CTF-like platform, where participants will complete missions, some will be a light introduction to CP, others are for the participants to bond and get to know each other better"
       },
       {
         time: "12:00 - 13:30",
         venue: "COM1 study lounge (subject to change)",
         activity: "Catered Lunch",
-        remarks: "Bento Set (Halal, Halal and vegetarian options will be available"
+        remarks: "Bento Set (Halal and vegetarian options will be available)"
       },
       {
         time: "13:30 - 15:00",
@@ -106,7 +106,7 @@ const scheduleData: ScheduleDay[] = [
         time: "12:00 - 13:30",
         venue: "-",
         activity: "Lunch",
-        remarks: "No lunch catered. Trainers will guide participants to nearby food places (COM1 Canteen and the Deck) for their meals"
+        remarks: "No lunch catered. Trainers will guide participants to nearby food places (COM1 Canteen, The Deck, and UTown) for their meals"
       },
       {
         time: "13:30 - 15:00",
@@ -277,7 +277,7 @@ const scheduleData: ScheduleDay[] = [
         time: "10:00 - 10:30",
         venue: "LT 15",
         activity: "Talk by Exclusive Sponsor",
-        remarks: "Talk prepared by our sponsor to participants"
+        remarks: "Talk prepared by our Hudson River Trading to participants"
       },
       {
         time: "10:30 - 11:00",
@@ -289,7 +289,7 @@ const scheduleData: ScheduleDay[] = [
         time: "11:00 - 12:30",
         venue: "COM1 study lounge (subject to change)",
         activity: "Catered Lunch (Buffet)",
-        remarks: "Buffet lunch to be held in the COM1 study lounge (tentative). Vegetarian and halal food options will be available"
+        remarks: "Buffet lunch to be held on LT 15 foyer"
       },
       {
         time: "12:30 - 16:30",
