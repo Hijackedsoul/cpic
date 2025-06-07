@@ -195,14 +195,21 @@ export const teamData: TeamData = {
       funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more",
       imagePosition: "center"
     },
-  ],
-  helpers: [
     {
       name: "Ryker Xu",
       image: "/lovable-uploads/077bb2aa-f766-42ef-b412-0ece1e2bd9b6.png",
-      role: "Helper",
+      role: "Trainer",
       funFact: "quack",
       imagePosition: "center"
+    },
+    {
+      name: "Yong Teck",
+      image: "/lovable-uploads/34369b24-d18b-4ba9-a247-d7100fa2f087.png",
+      role: "Trainer",
+      funFact: "Ready to help students excel in competitive programming",
+      imagePosition: "center"
     }
+  ],
+  helpers: [
   ],
 };
