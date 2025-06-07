@@ -10,6 +10,7 @@ export interface TeamData {
   organisers: TeamMember[];
   media: TeamMember[];
   trainers: TeamMember[];
+  helpers: TeamMember[];
 }
 
 export const teamData: TeamData = {
@@ -194,5 +195,14 @@ export const teamData: TeamData = {
       funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more",
       imagePosition: "center"
     },
+  ],
+  helpers: [
+    {
+      name: "Ryker Xu",
+      image: "/lovable-uploads/077bb2aa-f766-42ef-b412-0ece1e2bd9b6.png",
+      role: "Helper",
+      funFact: "quack",
+      imagePosition: "center"
+    }
   ],
 };
