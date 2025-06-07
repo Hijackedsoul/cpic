@@ -10,7 +10,6 @@ export interface TeamData {
   organisers: TeamMember[];
   media: TeamMember[];
   trainers: TeamMember[];
-  helpers: TeamMember[];
 }
 
 export const teamData: TeamData = {
@@ -28,6 +27,12 @@ export const teamData: TeamData = {
       role: "Head of Training",
       funFact: "my mothertongue is c++"
     },
+    //{
+      //name: "Raphael Lim Fu En",
+      //image: "/lovable-uploads/e6aad531-8fc5-4a72-a9fc-c166d1871e6a.png",
+      //role: "Training",
+      //funFact: "I missed gold by 1 point"
+    //},
     {
       name: "Pannawit Supanwassa",
       image: "/lovable-uploads/5a40b946-98a1-495a-91ca-e0d0338143f6.png",
@@ -189,35 +194,5 @@ export const teamData: TeamData = {
       funFact: "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more",
       imagePosition: "center"
     },
-  ],
-  helpers: [
-    {
-      name: "Sarah Chen",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      role: "Problem Setter",
-      funFact: "Can solve a problem in 3 different ways before breakfast",
-      imagePosition: "center"
-    },
-    {
-      name: "Alex Johnson",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      role: "Test Case Validator",
-      funFact: "Once found a bug that had been hiding for 6 months",
-      imagePosition: "center"
-    },
-    {
-      name: "Maria Rodriguez",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      role: "Editorial Writer",
-      funFact: "Makes complex algorithms sound simple",
-      imagePosition: "center"
-    },
-    {
-      name: "David Kim",
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      role: "Contest Infrastructure",
-      funFact: "Keeps our servers running smoothly during contests",
-      imagePosition: "center"
-    }
   ],
 };
