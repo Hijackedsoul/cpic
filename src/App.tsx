@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import OurPartners from "./pages/OurPartners";
 import OurTeam from "./pages/OurTeam";
 import Resources from "./pages/Resources";
+import Schedule from "./pages/Schedule";
 
 // ScrollToTop component to handle scrolling to top on navigation
 const ScrollToTop = () => {
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
