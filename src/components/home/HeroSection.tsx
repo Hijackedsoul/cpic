@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -15,6 +15,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ registrationLink, countdownDate }: HeroSectionProps) => {
+  const instagramUrl = "https://www.instagram.com/cpic.sutd/";
+
   return (
     <section className="min-h-screen bg-gradient-to-b from-black to-[#121212] flex items-center justify-center relative overflow-hidden">
       <ParticleBackground />
@@ -70,6 +72,18 @@ const HeroSection = ({ registrationLink, countdownDate }: HeroSectionProps) => {
               infinite={true}
             />
           </div>
+
+          {/* Registration Closed Notice */}
+          <motion.div
+            className="bg-red-500/10 border border-red-500/20 rounded-lg p-3 mx-auto max-w-md"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            <p className="text-red-400 font-mono text-sm">
+              Registration is now closed
+            </p>
+          </motion.div>
           
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
@@ -78,18 +92,18 @@ const HeroSection = ({ registrationLink, countdownDate }: HeroSectionProps) => {
             transition={{ duration: 0.7, delay: 1 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+              <Link to="/schedule">
                 <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black px-6 py-6 font-mono text-lg w-full sm:w-auto shadow-[0_0_15px_rgba(0,255,255,0.3)]">
-                  Register Now <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link to="/about">
-                <Button variant="outline" className="border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10 px-6 py-6 font-mono text-lg w-full sm:w-auto">
-                  Learn More
+                  View Schedule <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10 px-6 py-6 font-mono text-lg w-full sm:w-auto">
+                  Follow Us <Instagram className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
           
@@ -99,7 +113,7 @@ const HeroSection = ({ registrationLink, countdownDate }: HeroSectionProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.2 }}
           >
-            <p className="text-white/70 mb-4 font-mono">Next Course Begins In:</p>
+            <p className="text-white/70 mb-4 font-mono">Course Starting In:</p>
             <CountdownTimer targetDate={countdownDate} />
           </motion.div>
         </motion.div>
