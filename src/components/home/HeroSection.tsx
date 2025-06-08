@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -15,7 +14,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ registrationLink, countdownDate }: HeroSectionProps) => {
-  const instagramUrl = "https://www.instagram.com/cpic.sutd/";
+  const instagramUrl = "https://www.instagram.com/cpic_sg/";
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-black to-[#121212] flex items-center justify-center relative overflow-hidden">
