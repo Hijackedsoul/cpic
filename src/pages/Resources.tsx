@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Layout from '@/components/Layout';
 
 const Resources = () => {
-  const driveUrl = "https://drive.google.com/drive/folders/1d5V-YF3DHq9VejAElIycts5PAUxnykLP";
+  const driveUrl = "https://drive.google.com/drive/folders/1nDSRpJdMpuwkiOlRhEJbyLfhoXfBjW9E";
 
   useEffect(() => {
     // Immediate redirect to Google Drive folder
