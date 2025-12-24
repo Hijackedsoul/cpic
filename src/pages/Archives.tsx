@@ -62,13 +62,13 @@ const Archives = () => {
                   </div>
                   
                   <p className="text-gray-300 mb-4">
-                    Browse through our collection of photos from CPIC 2025. Relive the moments, challenges, and triumphs from our biggest competitive programming course yet.
+                    Event photos can be viewed here:
                   </p>
                   
                   <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black">
                     <a 
-                      href="https://nanyangjc.smugmug.com/2025/Competitive-Programming-Introductory-Course" 
-                      target="_blank" 
+                      href="https://drive.google.com/drive/folders/1DVo43QSARLzs5tJh-nLFg7KsFJXi5Izm?usp=sharing" 
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex w-full"
                     >
