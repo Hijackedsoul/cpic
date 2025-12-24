@@ -6,7 +6,7 @@ import { Calendar, Camera } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Archives = () => {
-  const [expandedYear, setExpandedYear] = useState<string | undefined>("2023");
+  const [expandedYear, setExpandedYear] = useState<string | undefined>("2025");
   
   return <Layout>
       <div className="container mx-auto px-4 py-16">
@@ -21,7 +21,65 @@ const Archives = () => {
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible value={expandedYear} onValueChange={setExpandedYear} className="bg-black/50 rounded-lg p-4 border border-gray-800">
-            <AccordionItem value="2023" className="border-b-gray-700">
+            <AccordionItem value="2025" className="border-b-gray-700">
+              <AccordionTrigger className="text-xl font-semibold py-4 hover:text-neon-cyan hover:no-underline">2025 Events</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-8 mt-2">
+                  <div className="bg-black/40 border border-gray-800 rounded-lg p-6 hover:border-neon-cyan/50 transition-colors">
+                    <div className="flex items-center mb-4">
+                      <Calendar className="mr-2 h-5 w-5 text-neon-cyan" />
+                      <h3 className="text-xl font-bold">CPIC 2025</h3>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="text-lg font-semibold text-neon-cyan">Venue</h4>
+                        <p>National University of Singapore (NUS)</p>
+                      </div>
+                      
+                      <div>
+                        <h4 className="text-lg font-semibold text-neon-cyan">Date & Time</h4>
+                        <p>June 16-20, 2025 | 9:00 AM - 5:00 PM</p>
+                      </div>
+                      
+                      <div>
+                        <h4 className="text-lg font-semibold text-neon-cyan">Highlights</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>Biggest ever CP initiative for JC and secondary school students</li>
+                          <li>200+ participants from 70+ schools across Singapore</li>
+                          <li>Final contest with prizes, certificates, and medals</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Photo Archive Section */}
+                <div className="bg-black/50 rounded-lg p-6 border border-gray-800 mt-8">
+                  <div className="flex items-center mb-4">
+                    <Camera className="mr-2 h-5 w-5 text-neon-cyan" />
+                    <h3 className="text-xl font-bold">Photo Archive</h3>
+                  </div>
+                  
+                  <p className="text-gray-300 mb-4">
+                    Browse through our collection of photos from CPIC 2025. Relive the moments, challenges, and triumphs from our biggest competitive programming course yet.
+                  </p>
+                  
+                  <Button className="bg-neon-cyan hover:bg-neon-cyan/80 text-black">
+                    <a 
+                      href="https://nanyangjc.smugmug.com/2025/Competitive-Programming-Introductory-Course" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex w-full"
+                    >
+                      View Photo Gallery
+                    </a>
+                  </Button>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="2024" className="border-b-gray-700">
               <AccordionTrigger className="text-xl font-semibold py-4 hover:text-neon-cyan hover:no-underline">2024 Events</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-8 mt-2">
